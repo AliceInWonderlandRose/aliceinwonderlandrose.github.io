@@ -2,43 +2,191 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Bootstrap Grid</title>
-<link rel="stylesheet" type="text/css" href="theme.css">
+<title>Untitled Document</title>
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+<style>
+table, th, td{
+	border: 1px solid black;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+@media screen (max-width: 768px){
+#col-sm-3 col-md-2{
+
+}
+
+#col-sm-9 col-md-8{
+
+}
+
+#col-sm-12 col-md-2{
+
+}
+}
+</style>
+
 </head>
 
 <body>
-  <div class="grid-container outline">
-      <div class="row">
-          <div class="col-1"><p>col-1</p></div>
-          <div class="col-1"><p>col-1</p></div>
-          <div class="col-1"><p>col-1</p></div>
-          <div class="col-1"><p>col-1</p></div>
-          <div class="col-1"><p>col-1</p></div>
-          <div class="col-1"><p>col-1</p></div>
-      </div>
-      <div class="row">
-          <div class="col-2"><p>col-2</p></div>
-          <div class="col-2"><p>col-2</p></div>
-          <div class="col-2"><p>col-2</p></div>
-      </div>
-      <div class="row">
-          <div class="col-3"><p>col-3</p></div>
-          <div class="col-3"><p>col-3</p></div>
-      </div>
-      <div class="row">
-          <div class="col-4"><p>col-4</p></div>
-          <div class="col-2"><p>col-2</p></div>
-      </div>
-      <div class="row">
-          <div class="col-5"><p>col-5</p></div>
-          <div class="col-1"><p>col-1</p></div>
-      </div>
-      <div class="row">
-          <div class="col-6"><p>col-6</p></div>
-      </div>
-  </div>
+
+        <table class="table">
+            <thead>
+                <div class="col-sm-3 col-md-2">
+                <tr>
+                   <ul>
+                    <th><h1><code>Contrary to popular belief, Lorem Ipsum is not simply random text.</code></h1>
+
+                    <p><li>It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</li></p>
+                     <p><li>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</li></p></th>
+
+                    <th><h1><em>Contrary to popular belief, Lorem Ipsum is not simply random text.</em></h1>
+                    <p><li>It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</li></p>
+                     <p><li>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</li></p></th>
 
 
+                    <th><h1>Contrary to popular belief, <small>Lorem Ipsum is not simply random text.</small></h1>
+
+                   <p><li>It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</li></p>
+                     <p><li>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</li></p></th>
+
+
+                    <th><h1><mark>Contrary to popular belief, Lorem Ipsum is not simply random text.</mark></h1>
+
+                    <p><li>It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</li></p>
+                     <p><li>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</li></p></th>
+                   </ul>
+
+                </tr>
+            </div>
+            </thead>
+            <tbody>
+                <div class="col-sm-9 col-md-8">
+                <tr>
+                    <ul>
+                    <td><h2><ins>Lorem Ipsum is simply</ins> dummy text of the printing and typesetting industry.</h2>
+
+  <li><p>here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p></li>
+
+  <li><p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+    <ul>
+      <li><p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p></li>
+
+      <li><p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p> </li>
+    </ul>
+  </li>
+  <li><p>The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p></li>
+
+</td>
+</ul>
+
+                    <td><h2>Lorem Ipsum <sub>is simply</sub> dummy text <sup>of the</sup> printing and typesetting industry.</h2>
+                    <li><p>here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p></li>
+
+  <li><p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+    <ul>
+      <li><p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p></li>
+
+      <li><p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p> </li>
+    </ul>
+  </li>
+  <li><p>The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p></li>
+
+                    <div class="row">
+        <div>
+            <div>
+                <input type="text" placeholder="Search&hellip;">
+                <span>
+                    <button type="button">Go</button>
+                </span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <input type="text"  placeholder="Type something&hellip;">
+                <span>
+                    <button type="button"> Action</button>
+                    <button type="button">Options</button>
+                </span>
+            </div>
+        </div>
+        </div>
+  </td>
+
+
+                    <td>
+                    <h2><del>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</del></h2>
+                    <li><p>here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p></li>
+
+  <li><p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+    <ul>
+      <li><p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p></li>
+
+      <li><p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p> </li>
+    </ul>
+  </li>
+  <li><p>The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p></li>
+
+                    <div>
+    <button type="button">What is Lorem Ipsum?</button>
+    <button type="button">Where does it come from?</button>
+    <button type="button">Why do we use it?</button>
+</div>
+
+                    </td>
+
+
+                    <td><h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+                    <li><p>here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p></li>
+
+  <li><p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+    <ul>
+      <li><p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p></li>
+
+      <li><p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p> </li>
+    </ul>
+  </li>
+  <li><p>The generated <strong>Lorem Ipsum</strong> is therefore always free from repetition, injected humour, or <button type="button">non-characteristic words etc.</button></p></li>
+
+                    </td>
+
+                </tr>
+               </div>
+
+                <div class="col-sm-12 col-md-2">
+                <tr>
+                    <ul>
+                    <td><h3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h3>
+                    <li><p>here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p></li>
+
+  <li><p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+    <ul>
+      <li><p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p></li>
+
+      <li><p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p> </li>
+    </ul>
+  </li>
+  <li><p>The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc,</p></li>
+    </td>
+
+
+                    <td><h3>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </h3>
+                      <p><li>It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</li></p>
+                     <p><li>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</li></p>
+
+                    </td>
+
+                    <td><h3><li>Parker</li></h3></td>
+                    <td><h3><li><button type="button">peterparker@mail.com</button></li></h3></td>
+
+                    </ul>
+                </tr>
+                </div>
+            </tbody>
+        </table>
 
 </body>
 </html>
