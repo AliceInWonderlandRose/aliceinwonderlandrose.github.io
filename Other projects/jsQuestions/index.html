@@ -83,7 +83,7 @@
                 <div role="tabpanel" class="tab-pane active" id="Q1">
                     <div class="row">
                         <div class="col-md-12">
-                        	<pre></pre>
+                        	<pre> #<br/> ####<br/> #####<br/> ######<br/> #######<br/></pre>
                         </div>
                         <div class="col-md-12"><button id="Q1button" type="button" class="btn btn-primary">Primary</button></div>
                         <div class="col-md-12">
@@ -204,12 +204,32 @@
 
         </div>
     </div>
+<div>
 
+
+
+
+</div>
     <script>
-        $(document).ready(function() {
-            $("#Q1button").on("click", function() {
-                $("#Q1result").html("answer one");
-            });
+    $(document).ready(function() {
+                $("#Q1button").on("click", function() {
+                        var str = "";
+                            // we want the string below
+                            //#<br/> ####<br/> #####<br/> ######<br/> #######<br/>
+                        for (var i = 1; i <= 6; i++) {
+                            // write i stars + <br/>
+                            console.log("i+ " + 1);
+                            for (var j = 1; j <= i; j++) {
+
+                                str = str + "#";
+                                console.log("str " + str);
+                                
+                            }
+								str = str + "<br/>";
+                        }
+
+                    $("#Q1result").html(str);
+                });
         
             $("#Q2button").on("click", function() {
                 $("#Q2result").html("answer two");
