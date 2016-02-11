@@ -83,7 +83,7 @@
                 <div role="tabpanel" class="tab-pane active" id="Q1">
                     <div class="row">
                         <div class="col-md-12">
-                        	<pre> #<br/> ####<br/> #####<br/> ######<br/> #######<br/></pre>
+                        	<pre> #<br/> ##<br/> ###<br/> ####<br /> #####<br /> ######<br /> #######<br /></pre>
                         </div>
                         <div class="col-md-12"><button id="Q1button" type="button" class="btn btn-primary">Primary</button></div>
                         <div class="col-md-12">
@@ -111,7 +111,9 @@
                 <div role="tabpanel" class="tab-pane" id="Q3">
                     <div class="row">
                         <div class="col-md-12">
-                        	<pre></pre>
+                        	<pre> # # # # <br/> # # # # <br/> # # # # <br/> # # # # <br/> # # # # <br/> # # # # <br/> # # # # <br/> # # # # <br/>
+
+                            </pre>
                         </div>
                         <div class="col-md-12"><button id="Q3button" type="button" class="btn btn-primary">Primary</button></div>
                         <div class="col-md-12">
@@ -204,12 +206,6 @@
 
         </div>
     </div>
-<div>
-
-
-
-
-</div>
     <script>
     $(document).ready(function() {
                 $("#Q1button").on("click", function() {
@@ -232,15 +228,57 @@
                 });
         
             $("#Q2button").on("click", function() {
-                $("#Q2result").html("answer two");
+               	
+				var foobar ="";
+				for(var i=1; i<=100; i++){
+				if(i%3===0 && i%5===0){
+				document.write('FooBar');}
+				else if(i%3===0){
+				document.write('Foo');}
+				else if(i%5===0){
+				document.write('Bar');}
+				else {
+					// This writes for every # that is not a multiple of three or five
+					document.write(i);
+					// document.write publishes it to the page
+				}
+				}
+			
+	
+				$("#Q2result").html(i);
             });
 			
+			 
+			 
+			 
 			 $("#Q3button").on("click", function() {
-                $("#Q3result").html("answer three");
+                var str = "";
+				for(var i = 0; i < 8; i++) {
+				for(var j = 0; j < 8; j++) {
+				if((i+j)%2 == 0) {
+  					str += " ";}
+				else {str += "#";}
+						}
+				console.log(str); //newline included
+				str = "";
+						
+						}
+				
+				$("#Q3result").html(str);
             });
 			
 			 $("#Q4button").on("click", function() {
-                $("#Q4result").html("answer four");
+                var text = "Bubbly Boy did not behave"
+				var Bhits = [];
+				for (var i=0; i < text.length; i++) {
+				if (text[i] === "B"){
+				Bhits.push("B");
+					}
+				}
+				
+				console.log(Bhits.length);
+				
+				$("#Q4result").html("Check Console");
             });
 			
 			 $("#Q5button").on("click", function() {
