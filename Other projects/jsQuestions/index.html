@@ -131,6 +131,7 @@
                         <div class="col-md-12">
                         	<pre>
                             <p>You can get the Nth character, or letter, from a string by writing "string".charAt(N), similar to how you get its length with "s".length. Write a function countBs that takes a string as its only argument and returns a number that indicates how many uppercase “B” characters are in the string.countBs("BBC"));// → 2</p>
+                            <p>Text: "Bubbly Boy did not behave"</p>
  
                            </pre>
                         </div>
@@ -269,11 +270,11 @@
 						
 						}
 				
-				$("#Q3result").html(str);
+				$("#Q3result").html("Check Console");
             });
 			
 			 $("#Q4button").on("click", function() {
-                var text = "Bubbly Boy did not behave"
+                var text = "Bubbly Boy did not behave";
 				var Bhits = [];
 				for (var i=0; i < text.length; i++) {
 				if (text[i] === "B"){
@@ -287,9 +288,21 @@
             });
 			
 			 $("#Q5button").on("click", function() {
-                $("#Q5result").html("answer five");
+               var text = "Bubbly Boy did not behave";
+				var Bhits = [];
+				for (var i=0; i < text.length; i++) {
+				if (text[i] === "B"){
+				Bhits.push("B");
+					}
+				}
+				
+				countChar("BbBbBbBbBbBbBbB", "b");
+				console.log(Bhits.length);
+				
+				$("#Q5result").html("Check Console");
             });
 			
+			 
 			 $("#Q6button").on("click", function() {
                 $("#Q6result").html("answer six");
             });
