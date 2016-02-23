@@ -395,16 +395,20 @@
                 $("#Q5result").html(t);
             });
 
-            $("#Q6button").on("click", function() {
-                
-				
-				
-				
-				
-				
-				
-				$("#Q6result").html("answer six");
-            });
+           function range (start,end){
+		 var arr = [];
+		 	arr.push(1);
+			arr.push(5);
+		 return arr;
+	 }
+
+ 		$("#Q6button").on("click", function() {
+                alert ("6");
+				//range (3,5);
+				var rangeAnswer = range();
+	
+		$("#Q6result").html("Answer is: "+rangeAnswer.join);
+            });	
 
             $("#Q7button").on("click", function() {
                 $("#Q7result").html("answer seven");
