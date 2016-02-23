@@ -360,7 +360,7 @@
             function countBs(bString) {
                 var count = 0;
                 for (var i = 0; i < bString.length; i++) {
-                    if (bString.charAt(i) == 'B') {
+                    if (bString.charAt(i) === 'B') {
                         count = (count + 1);
                     }
                 }
@@ -380,7 +380,7 @@
             function countChar(cString, charMatch) {
                 var count = 0;
                 for (var i = 0; i < cString.length; i++) {
-                    if (cString.charAt(i) == charMatch) {
+                    if (cString.charAt(i) === charMatch) {
                         count = (count + 1);
                     }
                 }
@@ -389,13 +389,11 @@
             $("#Q5button").on("click", function() {
 
                 var inputOne = prompt("");
-                var inputTwo = prompt("")
+                var inputTwo = prompt("");
 
-                var t = countChar(inputOne, inputTwo)
+                var t = countChar(inputOne, inputTwo);
                 $("#Q5result").html(t);
             });
-
-
 
             $("#Q6button").on("click", function() {
                 
