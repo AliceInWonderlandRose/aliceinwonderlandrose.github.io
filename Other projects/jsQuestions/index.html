@@ -146,8 +146,8 @@
                     <div class="row">
                         <div class="col-md-12">
                             <pre> 
- 								 $("#Q3button").on("click", function() {
-                var str = "";
+ 			$("#Q3button").on("click", function() {
+               	 var str = "";
 				for(var i = 0; i < 8; i++) {
 				for(var j = 0; j < 8; j++) {
 				if((i+j)%2 == 0) {
@@ -240,7 +240,25 @@
                 <div role="tabpanel" class="tab-pane" id="Q6">
                     <div class="row">
                         <div class="col-md-12">
-                            <pre> </pre>
+                            <pre> function range (start,end){
+		 var arr = [];
+		 	//arr.push(1);
+			//arr.push(5);
+			for (start; start <= end; start++){
+				arr.push(start);
+				
+				}
+			
+		 return arr;
+	 }
+
+ 	$("#Q6button").on("click", function() {
+               
+		//range (3,5);
+		var rangeAnswer = range(2,6);
+	
+	$("#Q6result").html("Answer is: " + rangeAnswer.join());
+            }); </pre>
                         </div>
                         <div class="col-md-12"><button id="Q6button" type="button" class="btn btn-primary">Primary</button></div>
                         <div class="col-md-12">
@@ -294,136 +312,151 @@
     </div>
     <script>
         $(document).ready(function() {
-            $("#Q1button").on("click", function() {
-                var str = "";
-                // we want the string below
-                //#<br/> ####<br/> #####<br/> ######<br/> #######<br/>
-                for (var i = 1; i <= 6; i++) {
-                    // write i stars + <br/>
-                    console.log("i+ " + 1);
-                    for (var j = 1; j <= i; j++) {
+    $("#Q1button").on("click", function() {
+        var str = "";
+        // we want the string below
+        //#<br/> ####<br/> #####<br/> ######<br/> #######<br/>
+        for (var i = 1; i <= 6; i++) {
+            // write i stars + <br/>
+            console.log("i+ " + 1);
+            for (var j = 1; j <= i; j++) {
 
-                        str = str + "#";
-                        console.log("str " + str);
+                str = str + "#";
+                console.log("str " + str);
 
-                    }
-                    str = str + "<br/>";
-                }
-
-                $("#Q1result").html(str);
-            });
-
-            $("#Q2button").on("click", function() {
-
-                var foobar = "";
-                for (var i = 1; i <= 100; i++) {
-                    if (i % 3 === 0 && i % 5 === 0) {
-                        document.write('FooBar');
-                    } else if (i % 3 === 0) {
-                        document.write('Foo');
-                    } else if (i % 5 === 0) {
-                        document.write('Bar');
-                    } else {
-                        // This writes for every # that is not a multiple of three or five
-                        document.write(i);
-                        // document.write publishes it to the page
-                    }
-                }
-
-
-                $("#Q2result").html(i);
-            });
-
-
-
-
-            $("#Q3button").on("click", function() {
-                var str = "";
-                for (var i = 0; i < 8; i++) {
-                    for (var j = 0; j < 8; j++) {
-                        if ((i + j) % 2 == 0) {
-                            str += " ";
-                        } else {
-                            str += "#";
-                        }
-                    }
-                    console.log(str); //newline included
-                    str = "";
-
-                }
-
-                $("#Q3result").html("Check Console");
-            });
-
-
-
-            function countBs(bString) {
-                var count = 0;
-                for (var i = 0; i < bString.length; i++) {
-                    if (bString.charAt(i) === 'B') {
-                        count = (count + 1);
-                    }
-                }
-                return count;
             }
+            str = str + "<br/>";
+        }
 
+        $("#Q1result").html(str);
+    });
 
-            $("#Q4button").on("click", function() {
+    $("#Q2button").on("click", function() {
 
-                var userInput = prompt("");
-                var x = countBs(userInput);
-
-                $("#Q4result").html(x);
-            });
-
-
-            function countChar(cString, charMatch) {
-                var count = 0;
-                for (var i = 0; i < cString.length; i++) {
-                    if (cString.charAt(i) === charMatch) {
-                        count = (count + 1);
-                    }
-                }
-                return count;
+        var foobar = "";
+        for (var i = 1; i <= 100; i++) {
+            if (i % 3 === 0 && i % 5 === 0) {
+                //document.write('FooBar');
+				foobar  += "FooBar <br>";
+				// Link things together in a chain or series.
+            } else if (i % 3 === 0) {
+                //document.write('Foo');
+            	foobar  += "Foo <br>";
+			} else if (i % 5 === 0) {
+                //document.write('Bar');
+            	foobar  += "Bar <br>";
+			} else {
+                // This writes for every # that is not a multiple of three or five
+                //document.write(i);
+                // document.write publishes it to the page
+				foobar  += i + "<br>";
             }
-            $("#Q5button").on("click", function() {
+        }
 
-                var inputOne = prompt("");
-                var inputTwo = prompt("");
 
-                var t = countChar(inputOne, inputTwo);
-                $("#Q5result").html(t);
-            });
+        $("#Q2result").html(foobar);
+		//bewareOfCaps <- write like this
+		//First word is lowercase and others capital NO SPACES!
+    });
 
-           function range (start,end){
+
+
+
+    $("#Q3button").on("click", function() {
+        var str = "";
+        for (var i = 0; i < 8; i++) {
+            for (var j = 0; j < 8; j++) {
+                if ((i + j) % 2 == 0) {
+                    str += " ";
+                } else {
+                    str += "#";
+                }
+            }
+            console.log(str); //newline included
+            str = "";
+
+        }
+
+        $("#Q3result").html("Check Console");
+    });
+
+
+
+    function countBs(bString) {
+        var count = 0;
+        for (var i = 0; i < bString.length; i++) {
+            if (bString.charAt(i) === 'B') {
+                count = (count + 1);
+            }
+        }
+        return count;
+    }
+
+
+    $("#Q4button").on("click", function() {
+
+        var userInput = prompt("");
+        var x = countBs(userInput);
+
+        $("#Q4result").html(x);
+    });
+
+
+    function countChar(cString, charMatch) {
+        var count = 0;
+        for (var i = 0; i < cString.length; i++) {
+            if (cString.charAt(i) === charMatch) {
+                count = (count + 1);
+            }
+        }
+        return count;
+    }
+    $("#Q5button").on("click", function() {
+
+        var inputOne = prompt("");
+        var inputTwo = prompt("");
+
+        var t = countChar(inputOne, inputTwo);
+        $("#Q5result").html(t);
+    });
+
+    function range (start,end){
 		 var arr = [];
-		 	arr.push(1);
-			arr.push(5);
+		 	//arr.push(1);
+			//arr.push(5);
+			for (start; start <= end; start++){
+				arr.push(start);
+				
+				}
+			
 		 return arr;
 	 }
 
- 		$("#Q6button").on("click", function() {
-                alert ("6");
-				//range (3,5);
-				var rangeAnswer = range();
+ 	$("#Q6button").on("click", function() {
+               
+		//range (3,5);
+		var rangeAnswer = range(2,6);
 	
-		$("#Q6result").html("Answer is: "+rangeAnswer.join);
+	$("#Q6result").html("Answer is: " + rangeAnswer.join());
             });	
 
-            $("#Q7button").on("click", function() {
-                $("#Q7result").html("answer seven");
-            });
+    
+	
+	
+	$("#Q7button").on("click", function() {
+        $("#Q7result").html("answer seven");
+    });
 
-            $("#Q8button").on("click", function() {
-                $("#Q8result").html("answer eight");
-            });
+    $("#Q8button").on("click", function() {
+        $("#Q8result").html("answer eight");
+    });
 
-            $("#Q9button").on("click", function() {
-                $("#Q9result").html("answer nine");
-            });
+    $("#Q9button").on("click", function() {
+        $("#Q9result").html("answer nine");
+    });
 
-        });
-    </script>
+}); 
+</script> 
 </body>
 
 </html>
