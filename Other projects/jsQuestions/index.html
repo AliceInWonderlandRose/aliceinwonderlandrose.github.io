@@ -83,138 +83,7 @@
                 <div role="tabpanel" class="tab-pane active" id="Q1">
                     <div class="row">
                         <div class="col-md-12">
-                        	<pre> #<br/> ##<br/> ###<br/> ####<br /> #####<br /> ######<br /> #######<br /></pre>
-                        </div>
-                        <div class="col-md-12"><button id="Q1button" type="button" class="btn btn-primary">Primary</button></div>
-                        <div class="col-md-12">
-                            <div id="Q1result"></div>
-                        </div>
-
-                    </div>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="Q2">
-                    <div class="row">
-                        <div class="col-md-12">
-                        	<pre> 
-                            <p>Write a program that writes to the screen all the numbers from 1 to 100, with the following exceptions. For multiples of 3 (and not 5), print "Foo" instead of the number. For multiples of 5 (and not 3), print "Bar" instead. For multiples of both 3 and 5 print "FooBar” instead of the number.</p></pre>
-                        </div>
-                        <div class="col-md-12"><button id="Q2button" type="button" class="btn btn-primary">Primary</button></div>
-                        <div class="col-md-12">
-                            <div id="Q2result"></div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-
-                <div role="tabpanel" class="tab-pane" id="Q3">
-                    <div class="row">
-                        <div class="col-md-12">
-                        	<pre> 
- <p>Write a program that creates ONE html string that represents a grid, using to create new lines. At each position of the grid there is either a space or a “#” character. The characters should form a logical square.</p>
- # # # # <br/> # # # # <br/> # # # # <br/> # # # # <br/> # # # # <br/> # # # # <br/> # # # # <br/> # # # # <br/> 
-                            </pre>
-                        </div>
-                        <div class="col-md-12"><button id="Q3button" type="button" class="btn btn-primary">Primary</button></div>
-                        <div class="col-md-12">
-                            <div id="Q3result"></div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div role="tabpanel" class="tab-pane" id="Q4">
-                    <div class="row">
-                        <div class="col-md-12">
-                        	<pre>
-                            <p>You can get the Nth character, or letter, from a string by writing "string".charAt(N), similar to how you get its length with "s".length. Write a function countBs that takes a string as its only argument and returns a number that indicates how many uppercase “B” characters are in the string.countBs("BBC"));// → 2</p>
-                            <p>Text: "Bubbly Boy did not behave"</p>
- 
-                           </pre>
-                        </div>
-                        <div class="col-md-12"><button id="Q4button" type="button" class="btn btn-primary">Primary</button></div>
-                        <div class="col-md-12">
-                            <div id="Q4result"></div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div role="tabpanel" class="tab-pane" id="Q5">
-                    <div class="row">
-                        <div class="col-md-12">
-                        	<pre> <p> Next, write a function called countChar that behaves like countBs,except it takes a second argument that indicates the character that is to be counted (rather than counting only uppercase “B” characters). countChar("kakkerlak", "k")); // → 4</p></pre>
-                        </div>
-                        <div class="col-md-12"><button id="Q5button" type="button" class="btn btn-primary">Primary</button></div>
-                        <div class="col-md-12">
-                            <div id="Q5result"></div>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div role="tabpanel" class="tab-pane" id="Q6">
-                    <div class="row">
-                        <div class="col-md-12">
-                        	<pre> </pre>
-                        </div>
-                        <div class="col-md-12"><button id="Q6button" type="button" class="btn btn-primary">Primary</button></div>
-                        <div class="col-md-12">
-                            <div id="Q6result"></div>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div role="tabpanel" class="tab-pane" id="Q7">
-                    <div class="row">
-                        <div class="col-md-12">
-                        	<pre></pre>
-                        </div>
-                        <div class="col-md-12"><button id="Q7button" type="button" class="btn btn-primary">Primary</button></div>
-                        <div class="col-md-12">
-                            <div id="Q7result"></div>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div role="tabpanel" class="tab-pane" id="Q8">
-                    <div class="row">
-                        <div class="col-md-12">
-                        	<pre></pre>
-                        </div>
-                        <div class="col-md-12"><button id="Q8button" type="button" class="btn btn-primary">Primary</button></div>
-                        <div class="col-md-12">
-                            <div id="Q8result"></div>
-                        </div>
-
-                    </div>
-                </div>
-                <div role="tabpanel" class="tab-pane" id="Q9">
-                    <div class="row">
-                        <div class="col-md-12">
-                        	<pre></pre>
-                        </div>
-                        <div class="col-md-12"><button id="Q9button" type="button" class="btn btn-primary">Primary</button></div>
-                        <div class="col-md-12">
-                            <div id="Q9result"></div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <script>
-    $(document).ready(function() {
-                $("#Q1button").on("click", function() {
+                            <pre>   $("#Q1button").on("click", function() {
                         var str = "";
                             // we want the string below
                             //#<br/> ####<br/> #####<br/> ######<br/> #######<br/>
@@ -231,11 +100,20 @@
                         }
 
                     $("#Q1result").html(str);
-                });
-        
-            $("#Q2button").on("click", function() {
-               	
-				var foobar ="";
+                });</pre>
+                        </div>
+                        <div class="col-md-12"><button id="Q1button" type="button" class="btn btn-primary">Primary</button></div>
+                        <div class="col-md-12">
+                            <div id="Q1result"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="Q2">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <pre> 
+                            var foobar ="";
 				for(var i=1; i<=100; i++){
 				if(i%3===0 && i%5===0){
 				document.write('FooBar');}
@@ -252,12 +130,24 @@
 			
 	
 				$("#Q2result").html(i);
-            });
-			
-			 
-			 
-			 
-			 $("#Q3button").on("click", function() {
+            });</pre>
+                        </div>
+                        <div class="col-md-12"><button id="Q2button" type="button" class="btn btn-primary">Primary</button></div>
+                        <div class="col-md-12">
+                            <div id="Q2result"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div role="tabpanel" class="tab-pane" id="Q3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <pre> 
+ 								 $("#Q3button").on("click", function() {
                 var str = "";
 				for(var i = 0; i < 8; i++) {
 				for(var j = 0; j < 8; j++) {
@@ -272,10 +162,23 @@
 				
 				$("#Q3result").html("Check Console");
             });
-			
 
-			 
-			function countBs(bString) {
+                            </pre>
+                        </div>
+                        <div class="col-md-12"><button id="Q3button" type="button" class="btn btn-primary">Primary</button></div>
+                        <div class="col-md-12">
+                            <div id="Q3result"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="Q4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <pre>
+                            function countBs(bString) {
         var count = 0;
         for (var i = 0; i < bString.length; i++) {
           if (bString.charAt(i) == 'B') {
@@ -293,9 +196,22 @@
 
         $("#Q4result").html(x);
       });
-                    
-			
-			 function countChar(cString, charMatch) {
+ 
+                           </pre>
+                        </div>
+                        <div class="col-md-12"><button id="Q4button" type="button" class="btn btn-primary">Primary</button></div>
+                        <div class="col-md-12">
+                            <div id="Q4result"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="Q5">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <pre>  function countChar(cString, charMatch) {
         var count = 0;
         for (var i = 0; i < cString.length; i++) {
           if (cString.charAt(i) == charMatch) {
@@ -312,26 +228,193 @@
         var t = countChar(inputOne, inputTwo)
         $("#Q5result").html(t);
       });
+</pre>
+                        </div>
+                        <div class="col-md-12"><button id="Q5button" type="button" class="btn btn-primary">Primary</button></div>
+                        <div class="col-md-12">
+                            <div id="Q5result"></div>
+                        </div>
 
-			
-			 
-			 $("#Q6button").on("click", function() {
+                    </div>
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="Q6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <pre> </pre>
+                        </div>
+                        <div class="col-md-12"><button id="Q6button" type="button" class="btn btn-primary">Primary</button></div>
+                        <div class="col-md-12">
+                            <div id="Q6result"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="Q7">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <pre></pre>
+                        </div>
+                        <div class="col-md-12"><button id="Q7button" type="button" class="btn btn-primary">Primary</button></div>
+                        <div class="col-md-12">
+                            <div id="Q7result"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="Q8">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <pre></pre>
+                        </div>
+                        <div class="col-md-12"><button id="Q8button" type="button" class="btn btn-primary">Primary</button></div>
+                        <div class="col-md-12">
+                            <div id="Q8result"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="Q9">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <pre></pre>
+                        </div>
+                        <div class="col-md-12"><button id="Q9button" type="button" class="btn btn-primary">Primary</button></div>
+                        <div class="col-md-12">
+                            <div id="Q9result"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("#Q1button").on("click", function() {
+                var str = "";
+                // we want the string below
+                //#<br/> ####<br/> #####<br/> ######<br/> #######<br/>
+                for (var i = 1; i <= 6; i++) {
+                    // write i stars + <br/>
+                    console.log("i+ " + 1);
+                    for (var j = 1; j <= i; j++) {
+
+                        str = str + "#";
+                        console.log("str " + str);
+
+                    }
+                    str = str + "<br/>";
+                }
+
+                $("#Q1result").html(str);
+            });
+
+            $("#Q2button").on("click", function() {
+
+                var foobar = "";
+                for (var i = 1; i <= 100; i++) {
+                    if (i % 3 === 0 && i % 5 === 0) {
+                        document.write('FooBar');
+                    } else if (i % 3 === 0) {
+                        document.write('Foo');
+                    } else if (i % 5 === 0) {
+                        document.write('Bar');
+                    } else {
+                        // This writes for every # that is not a multiple of three or five
+                        document.write(i);
+                        // document.write publishes it to the page
+                    }
+                }
+
+
+                $("#Q2result").html(i);
+            });
+
+
+
+
+            $("#Q3button").on("click", function() {
+                var str = "";
+                for (var i = 0; i < 8; i++) {
+                    for (var j = 0; j < 8; j++) {
+                        if ((i + j) % 2 == 0) {
+                            str += " ";
+                        } else {
+                            str += "#";
+                        }
+                    }
+                    console.log(str); //newline included
+                    str = "";
+
+                }
+
+                $("#Q3result").html("Check Console");
+            });
+
+
+
+            function countBs(bString) {
+                var count = 0;
+                for (var i = 0; i < bString.length; i++) {
+                    if (bString.charAt(i) == 'B') {
+                        count = (count + 1);
+                    }
+                }
+                return count;
+            }
+
+
+            $("#Q4button").on("click", function() {
+
+                var userInput = prompt("");
+                var x = countBs(userInput);
+
+                $("#Q4result").html(x);
+            });
+
+
+            function countChar(cString, charMatch) {
+                var count = 0;
+                for (var i = 0; i < cString.length; i++) {
+                    if (cString.charAt(i) == charMatch) {
+                        count = (count + 1);
+                    }
+                }
+                return count;
+            }
+            $("#Q5button").on("click", function() {
+
+                var inputOne = prompt("");
+                var inputTwo = prompt("")
+
+                var t = countChar(inputOne, inputTwo)
+                $("#Q5result").html(t);
+            });
+
+
+
+            $("#Q6button").on("click", function() {
                 $("#Q6result").html("answer six");
             });
-			
-			 $("#Q7button").on("click", function() {
+
+            $("#Q7button").on("click", function() {
                 $("#Q7result").html("answer seven");
             });
-			
-			 $("#Q8button").on("click", function() {
+
+            $("#Q8button").on("click", function() {
                 $("#Q8result").html("answer eight");
             });
-			
-			 $("#Q9button").on("click", function() {
+
+            $("#Q9button").on("click", function() {
                 $("#Q9result").html("answer nine");
             });
-		
-		});
+
+        });
     </script>
 </body>
 
