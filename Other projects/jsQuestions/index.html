@@ -273,16 +273,24 @@
 				$("#Q3result").html("Check Console");
             });
 			
+			 
+			 function countBs(bString) {
+        var count = 0;
+        for (var i = 0; i < bString.length; i++) {
+          if (bString.charAt(i) == 'B') {
+            count = (count + 1);
+          }
+        }
+        return count;
+      }
+			 
+			 
 			 $("#Q4button").on("click", function() {
-                var text = "Bubbly Boy did not behave";
-				var Bhits = [];
-				for (var i=0; i < text.length; i++) {
-				if (text[i] === "B"){
-				Bhits.push("B");
-					}
-				}
-				
-				console.log(Bhits.length);
+                var userInput = prompt("");
+        var x = countBs(userInput);
+
+        $("#Q4result").html(x);
+      });
 				
 				$("#Q4result").html("Check Console");
             });
