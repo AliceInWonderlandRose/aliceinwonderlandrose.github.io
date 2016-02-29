@@ -287,11 +287,11 @@
                 <div role="tabpanel" class="tab-pane" id="Q8">
                     <div class="row">
                         <div class="col-md-12">
-                            <pre>function reverse (end,start){
+                            <pre>        function range (end,start){
 		 var arr = [];
 		 	//arr.push(5);
 			//arr.push(1);
-			for (end; end <= start; end++){
+			for (end; end >= start; end--){
 				arr.push(end);
 				
 				}
@@ -299,17 +299,18 @@
 		 return arr;
 	 }
 	
-	
-	
-	$("#Q8button").on("click", function() {
+		
+		
+		$("#Q8button").on("click", function() {
+            
        
-		var reverseArray = reverse(5,1); 
+		var reverseArray = range(5,1); 
 		
-	});
+
 	
-		
-		$("#Q8result").html("Answer is: " +reverseArray.join());
-    });</pre>
+            $("#Q8result").html("Answer is: " + reverseArray.join());
+        });
+</pre>
                         </div>
                         <div class="col-md-12"><button id="Q8button" type="button" class="btn btn-primary">Primary</button></div>
                         <div class="col-md-12">
@@ -472,11 +473,11 @@
        
         });
 
-        function reverse (end,start){
+        function range (end,start){
 		 var arr = [];
 		 	//arr.push(5);
 			//arr.push(1);
-			for (end; end <= start; end++){
+			for (end; end >= start; end--){
 				arr.push(end);
 				
 				}
@@ -493,7 +494,7 @@
 		
 
 	
-            $("#Q8result").html("Answer is: " +reverseArray.join());
+            $("#Q8result").html("Answer is: " + reverseArray.join());
         });
 
 
