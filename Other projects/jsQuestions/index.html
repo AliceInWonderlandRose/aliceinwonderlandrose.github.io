@@ -51,7 +51,7 @@
                         <li><a href="http://AliceInWonderlandRose.github.io/Other%20projects/TwitterBootstrap/carousel.html">Carousel</a></li>
                     </ul>
                 </li>
-                <li><a href="http://aliceinwonderlandrose.github.io/Other%20projects/ticTacToe/index.html">Tic Tac Toe</a></li>
+                <li><a href="http://AliceInWonderlandRose.github.io/Other%20projects/ticTacToe/index.html">Tic Tac Toe</a></li>
 
             </ul>
             <form role="search" class="navbar-form navbar-left">
@@ -301,14 +301,14 @@
 	
 	
 	
-	$("#Q9button").on("click", function() {
+	$("#Q8button").on("click", function() {
        
 		var reverseArray = reverse(5,1); 
 		
 	});
 	
 		
-		$("#Q9result").html("Answer is: " +reverseArray.join());
+		$("#Q8result").html("Answer is: " +reverseArray.join());
     });</pre>
                         </div>
                         <div class="col-md-12"><button id="Q8button" type="button" class="btn btn-primary">Primary</button></div>
@@ -336,7 +336,7 @@
         </div>
     </div>
     <script>
-        $(document).ready(function() {
+         $(document).ready(function() {
         $("#Q1button").on("click", function() {
             var str = "";
             // we want the string below
@@ -464,55 +464,53 @@
             $("#Q6result").html("Answer is: " + rangeAnswer.join());
         });
 
-        function range(start, end)
-        var arr = [];
-        for ()
-
-            $("#Q7button").on("click", function() {
-
-
+        
+		$("#Q7button").on("click", function() {
 
             $("#Q7result").html("answer seven");
         });
+       
+        });
 
-        function reverse(end, start) {
-            var arr = [];
-            //arr.push(5);
-            //arr.push(1);
-            for (end; end <= start; end++) {
-                arr.push(end);
+        function reverse (end,start){
+		 var arr = [];
+		 	//arr.push(5);
+			//arr.push(1);
+			for (end; end <= start; end++){
+				arr.push(end);
+				
+				}
+			
+		 return arr;
+	 }
+	
+		
+		
+		$("#Q8button").on("click", function() {
+            
+       
+		var reverseArray = range(5,1); 
+		
 
-            }
-
-            return arr;
-        }
-
-
-
-        $("#Q8button").on("click", function() {
-
-            var reverseArray = reverse(5, 1);
-
-            $("#Q8result").html("Answer is: " + reverseArray.join());
+	
+            $("#Q8result").html("Answer is: " +reverseArray.join());
         });
 
 
+        
+		
+		
+		
+		
+		
+		
+		$("#Q9button").on("click", function() {
 
-
-        $("#Q9button").on("click", function() {
-
-
-
+            $("#Q9result").html("answer nine");
         });
 
-
-        $("#Q9result").html();
-        });
-
-
-
-
-        });
+		
+		
     </script>
 </body>
 
