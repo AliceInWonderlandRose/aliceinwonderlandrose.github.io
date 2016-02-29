@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  var circleOrEx = "o"; // what does this variable represent
+  var circleOrEx = "o"; // var is the variable, circleOrEx is the class, "o" targets the o's.
   var isGameInProgress = true; // what does this variable represent
   var winningCombos = { // what does this variable represent; explain what the keys and values represent
     0: [ //0 is key
@@ -47,7 +47,7 @@ $(document).ready(function() {
     ]
   };
 
-  // Explain what this event does
+  // When you click the board during the game to make either an X or an O appear.
   $("#board").find("div").on("click", function() {
 
     if (isGameInProgress && $(this).hasClass("empty")) { /// Explain these conditions
