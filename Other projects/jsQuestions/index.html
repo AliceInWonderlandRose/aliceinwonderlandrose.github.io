@@ -322,7 +322,28 @@
                 <div role="tabpanel" class="tab-pane" id="Q9">
                     <div class="row">
                         <div class="col-md-12">
-                            <pre></pre>
+                            <pre> function range (end,start){
+		 var arr = [];
+		 	//arr.push(5);
+			//arr.push(1);
+			for (end; end >= start; end--){
+				arr.push(end);
+				
+				}
+			
+		 return arr;
+	 }
+	
+		
+		
+		
+		
+		$("#Q9button").on("click", function() {
+
+           //var reverseArray = range(5,1); 
+		  var reverseArrayInPlace =range(5,1);
+		    $("#Q9result").html("Answer is: " + reverseArrayInPlace);
+        });</pre>
                         </div>
                         <div class="col-md-12"><button id="Q9button" type="button" class="btn btn-primary">Primary</button></div>
                         <div class="col-md-12">
@@ -500,14 +521,27 @@
 
         
 		
-		
+		 function range (end,start){
+		 var arr = [];
+		 	//arr.push(5);
+			//arr.push(1);
+			for (end; end >= start; end--){
+				arr.push(end);
+				
+				}
+			
+		 return arr;
+	 }
+	
 		
 		
 		
 		
 		$("#Q9button").on("click", function() {
 
-            $("#Q9result").html("answer nine");
+           //var reverseArray = range(5,1); 
+		  var reverseArrayInPlace =range(5,1);
+		    $("#Q9result").html("Answer is: " + reverseArrayInPlace);
         });
 
 		
