@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
   var circleOrEx = "o"; // var is the variable, circleOrEx is the class, "o" targets the o's.
-  var isGameInProgress = true; // what does this variable represent
-  var winningCombos = { // what does this variable represent; explain what the keys and values represent
+  var isGameInProgress = true; // this code targets the the game while playing, not to erase the "x's" and "o's"
+  var winningCombos = { // targets the winning game, either "x" or "o"
     0: [ //0 is key
       [1, 2], //this multiDimensional Array is values
       [3, 6],
@@ -50,10 +50,10 @@ $(document).ready(function() {
   // When you click the board during the game to make either an X or an O appear.
   $("#board").find("div").on("click", function() {
 
-    if (isGameInProgress && $(this).hasClass("empty")) { /// Explain these conditions
+    if (isGameInProgress && $(this).hasClass("empty")) { /// This is the start of the game. The grid is empty at the start of the game. Who ever gows first is either an "x" or an "o" when they click the first empty square. 
       $(this).removeClass("empty").append("<span class='" + circleOrEx + "'>" + circleOrEx + "</span");
 
-      checkIfWon($(this).index(), circleOrEx); //Explain
+      checkIfWon($(this).index(), circleOrEx); //This code, I believe is who ever wins the game ("x" or "o") the pop up will appear and state who was teh winner of the game. 
 
       if (circleOrEx === "o") {
         circleOrEx = "x";
@@ -64,10 +64,10 @@ $(document).ready(function() {
 
   });
 
-  // Explain what this event does
+  // When you click the botton, a new grid (or game) will appear. 
   $("#newGame").on("click", function() {
 
-    var boardSquares = $("#board").find("div"); //what is this variable
+    var boardSquares = $("#board").find("div"); //locates the div in the HTML to buld a new grid. 
     var firstEmptyMemorySquare = $(".container").find(".nine").filter(function() { //bonus Explain what filter does
       return $.trim($(this).text()) === "" && $(this).children().length === 0;
     }).not("#board").first();
