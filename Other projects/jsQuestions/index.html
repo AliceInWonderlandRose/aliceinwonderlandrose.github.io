@@ -34,7 +34,7 @@
                         <li><a href="#">Display Questions Example</a></li>
                         <li><a href="#">Button Event Example</a></li>
                         <li><a href="http://AliceInWonderlandRose.github.io/Other%20projects/jsQuestions/index.html">Week 5</a></li>
-                        <li><a href="#">Tic Tac Toe</a></li>
+
 
 
                     </ul>
@@ -51,6 +51,8 @@
                         <li><a href="http://AliceInWonderlandRose.github.io/Other%20projects/TwitterBootstrap/carousel.html">Carousel</a></li>
                     </ul>
                 </li>
+                <li><a href="#">Tic Tac Toe</a></li>
+
             </ul>
             <form role="search" class="navbar-form navbar-left">
                 <div class="form-group">
@@ -58,7 +60,7 @@
                 </div>
             </form>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Login</a></li>
+                <li><a href="http://AliceInWonderlandRose.github.io/Other%20projects/TwitterBootstrap/ticTacToe.html">Login</a></li>
             </ul>
         </div>
     </nav>
@@ -335,187 +337,183 @@
     </div>
     <script>
         $(document).ready(function() {
-    $("#Q1button").on("click", function() {
-        var str = "";
-        // we want the string below
-        //#<br/> ####<br/> #####<br/> ######<br/> #######<br/>
-        for (var i = 1; i <= 6; i++) {
-            // write i stars + <br/>
-            console.log("i+ " + 1);
-            for (var j = 1; j <= i; j++) {
+        $("#Q1button").on("click", function() {
+            var str = "";
+            // we want the string below
+            //#<br/> ####<br/> #####<br/> ######<br/> #######<br/>
+            for (var i = 1; i <= 6; i++) {
+                // write i stars + <br/>
+                console.log("i+ " + 1);
+                for (var j = 1; j <= i; j++) {
 
-                str = str + "#";
-                console.log("str " + str);
+                    str = str + "#";
+                    console.log("str " + str);
 
+                }
+                str = str + "<br/>";
             }
-            str = str + "<br/>";
-        }
 
-        $("#Q1result").html(str);
-    });
+            $("#Q1result").html(str);
+        });
 
-    $("#Q2button").on("click", function() {
+        $("#Q2button").on("click", function() {
 
-        var foobar = "";
-        for (var i = 1; i <= 100; i++) {
-            if (i % 3 === 0 && i % 5 === 0) {
-				foobar  += "FooBar <br>";
-				// Link things together in a chain or series.
-            } else if (i % 3 === 0) {
-               
-            	foobar  += "Foo <br>";
-			} else if (i % 5 === 0) {
-               
-            	foobar  += "Bar <br>";
-			} else {
-                // This writes for every # that is not a multiple of three or five
-                //document.write(i);
-                // document.write publishes it to the page
-				foobar  += i + "<br>";
-            }
-        }
+            var foobar = "";
+            for (var i = 1; i <= 100; i++) {
+                if (i % 3 === 0 && i % 5 === 0) {
+                    foobar += "FooBar <br>";
+                    // Link things together in a chain or series.
+                } else if (i % 3 === 0) {
 
+                    foobar += "Foo <br>";
+                } else if (i % 5 === 0) {
 
-        $("#Q2result").html(foobar);
-		//bewareOfCaps <- write like this
-		//First word is lowercase and others capital NO SPACES!
-    });
-
-
-
-
-    $("#Q3button").on("click", function() {
-        var str = "";
-        for (var i = 0; i < 8; i++) {
-            for (var j = 0; j < 8; j++) {
-                if ((i + j) % 2 == 0) {
-                    str += " ";
+                    foobar += "Bar <br>";
                 } else {
-                    str += "#";
+                    // This writes for every # that is not a multiple of three or five
+                    //document.write(i);
+                    // document.write publishes it to the page
+                    foobar += i + "<br>";
                 }
             }
-            console.log(str); //newline included
-            str = "";
-
-        }
-
-        $("#Q3result").html(str);
-    });
 
 
+            $("#Q2result").html(foobar);
+            //bewareOfCaps <- write like this
+            //First word is lowercase and others capital NO SPACES!
+        });
 
-    function countBs(bString) {
-        var count = 0;
-        for (var i = 0; i < bString.length; i++) {
-            if (bString.charAt(i) === 'B') {
-                count = (count + 1);
+
+
+
+        $("#Q3button").on("click", function() {
+            var str = "";
+            for (var i = 0; i < 8; i++) {
+                for (var j = 0; j < 8; j++) {
+                    if ((i + j) % 2 == 0) {
+                        str += " ";
+                    } else {
+                        str += "#";
+                    }
+                }
+                console.log(str); //newline included
+                str = "";
+
             }
-        }
-        return count;
-    }
+
+            $("#Q3result").html(str);
+        });
 
 
-    $("#Q4button").on("click", function() {
 
-        var userInput = prompt("");
-        var x = countBs(userInput);
-
-        $("#Q4result").html(x);
-    });
-
-
-    function countChar(cString, charMatch) {
-        var count = 0;
-        for (var i = 0; i < cString.length; i++) {
-            if (cString.charAt(i) === charMatch) {
-                count = (count + 1);
+        function countBs(bString) {
+            var count = 0;
+            for (var i = 0; i < bString.length; i++) {
+                if (bString.charAt(i) === 'B') {
+                    count = (count + 1);
+                }
             }
+            return count;
         }
-        return count;
-    }
-    $("#Q5button").on("click", function() {
 
-        var inputOne = prompt("");
-        var inputTwo = prompt("");
 
-        var t = countChar(inputOne, inputTwo);
-        $("#Q5result").html(t);
-    });
+        $("#Q4button").on("click", function() {
 
-    function range (start,end){
-		 var arr = [];
-		 	//arr.push(1);
-			//arr.push(5);
-			for (start; start <= end; start++){
-				arr.push(start);
-				
-				}
-			
-		 return arr;
-	 }
+            var userInput = prompt("");
+            var x = countBs(userInput);
 
- 	$("#Q6button").on("click", function() {
-               
-		//range (3,5);
-		var rangeAnswer = range(2,6);
-	
-	$("#Q6result").html("Answer is: " + rangeAnswer.join());
-            });	
+            $("#Q4result").html(x);
+        });
 
-    function range (start,end)
-		 var arr = [];
-		 for()
-	
-	$("#Q7button").on("click", function() {
-      
-	   
-	   
-	    $("#Q7result").html("answer seven");
-    });
 
-   function reverse (end,start){
-		 var arr = [];
-		 	//arr.push(5);
-			//arr.push(1);
-			for (end; end <= start; end++){
-				arr.push(end);
-				
-				}
-			
-		 return arr;
-	 }
-   
-   
-   
-    $("#Q8button").on("click", function() {
-       
-	   var reverseArray = reverse(5,1); 
-	   
-	    $("#Q8result").html("Answer is: " +reverseArray.join());
-    });
+        function countChar(cString, charMatch) {
+            var count = 0;
+            for (var i = 0; i < cString.length; i++) {
+                if (cString.charAt(i) === charMatch) {
+                    count = (count + 1);
+                }
+            }
+            return count;
+        }
+        $("#Q5button").on("click", function() {
 
-    
-	
-	
-	
-	
-	
-	
-	$("#Q9button").on("click", function() {
-       
-		
-		
-	});
-	
-		
-		$("#Q9result").html();
-    });
+            var inputOne = prompt("");
+            var inputTwo = prompt("");
+
+            var t = countChar(inputOne, inputTwo);
+            $("#Q5result").html(t);
+        });
+
+        function range(start, end) {
+            var arr = [];
+            //arr.push(1);
+            //arr.push(5);
+            for (start; start <= end; start++) {
+                arr.push(start);
+
+            }
+
+            return arr;
+        }
+
+        $("#Q6button").on("click", function() {
+
+            //range (3,5);
+            var rangeAnswer = range(2, 6);
+
+            $("#Q6result").html("Answer is: " + rangeAnswer.join());
+        });
+
+        function range(start, end)
+        var arr = [];
+        for ()
+
+            $("#Q7button").on("click", function() {
 
 
 
+            $("#Q7result").html("answer seven");
+        });
 
-}); 
-</script> 
+        function reverse(end, start) {
+            var arr = [];
+            //arr.push(5);
+            //arr.push(1);
+            for (end; end <= start; end++) {
+                arr.push(end);
+
+            }
+
+            return arr;
+        }
+
+
+
+        $("#Q8button").on("click", function() {
+
+            var reverseArray = reverse(5, 1);
+
+            $("#Q8result").html("Answer is: " + reverseArray.join());
+        });
+
+
+
+
+        $("#Q9button").on("click", function() {
+
+
+
+        });
+
+
+        $("#Q9result").html();
+        });
+
+
+
+
+        });
+    </script>
 </body>
 
 </html>
