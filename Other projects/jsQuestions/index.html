@@ -180,25 +180,26 @@
                     <div class="row">
                         <div class="col-md-12">
                             <pre>
-                            function countBs(bString) {
-        var count = 0;
-        for (var i = 0; i < bString.length; i++) {
-          if (bString.charAt(i) == 'B') {
-            count = (count + 1);
-          }
-        }
-        return count;
-      }
-
-
-      $("#Q4button").on("click", function() {
-
-        var userInput = prompt("");
-        var x = countBs(userInput);
-
-        $("#Q4result").html(x);
-      });
- 
+                             $("#Q4button").on("click", function() {
+		var B = ""; //this is a variabale
+		var sen = prompt ("Just type"); // text box
+		var countB = []; //this is an array that counts the B's
+		for (var i = 0; i < sen.length;  i++) { //i < sen.length; this is the limit of the search (whatever they type in the box)
+			if (sen [i]==="B") { //trying to find the B
+				countB.push("B"); // push the answer in the screen
+			}
+		}
+		
+		// this text "How many Bs" or if there are no B's text would say "No B's"
+		if (countB.length ===0){ // What happens when there are no B's :ALSO .length is number of characters. 
+			B = "No B's";
+			} 
+			
+		else { // What happens when there are B's
+			B = countB.length;
+			}	
+        $("#Q4result").html(B);
+    });
                            </pre>
                         </div>
                         <div class="col-md-12"><button id="Q4button" type="button" class="btn btn-primary">Primary</button></div>
@@ -213,23 +214,32 @@
                 <div role="tabpanel" class="tab-pane" id="Q5">
                     <div class="row">
                         <div class="col-md-12">
-                            <pre>  function countBs(bString) {
-        var count = [];
-        for (var i = 0; i < bString.length; i++) {
-            if (bString.charAt(i) === 'B' || 'b') {
-                count = (count);
-            }
-        }
-        return count;
-    }
-    $("#Q5button").on("click", function() {
+                            <pre> 
+                             $("#Q5button").on("click", function() {
 
-        var inputOne = prompt("");
-
-        var t = countBs(inputOne);
-        $("#Q5result").html(t);
+		var B = ""; //this is a variabale
+		var sen = prompt ("Just type"); // text box
+		var countChar = [];
+		//var countB = []; //this is an array that counts the B's
+		for (var i = 0; i < sen.length;  i++) { //i < sen.length; this is the limit of the search (whatever they type in the box)
+			if (sen [i]==="B") { //trying to find the B
+				countChar.push("B","b"); // push the answer in the screen
+			}
+		}
+		
+		// this text "How many Bs" or if there are no B's text would say "No B's"
+		if (countChar.length ===0){ // What happens when there are no B's :ALSO .length is number of characters. 
+			B = "No B's or b's";
+			} 
+			
+		else { // What happens when there are B's
+			B = countChar.length;
+			}	
+        
+        $("#Q5result").html(B);
     });
-</pre>
+          
+                    </pre>
                         </div>
                         <div class="col-md-12"><button id="Q5button" type="button" class="btn btn-primary">Primary</button></div>
                         <div class="col-md-12">
@@ -239,6 +249,7 @@
                     </div>
 
                 </div>
+                
                 <div role="tabpanel" class="tab-pane" id="Q6">
                     <div class="row">
                         <div class="col-md-12">
@@ -426,51 +437,70 @@
                     str += "#";
                 }
             }
-            console.log(str); //newline included
-            str = "";
+          
+          str = str + "#";
+                console.log("str " + str);
 
-        }
+            }
+            str = str + "<br/>";
+        
+
+       
 
         $("#Q3result").html(str);
     });
 
 
 
-    function countBs(bString) {
-        var count = 0;
-        for (var i = 0; i < bString.length; i++) {
-            if (bString.charAt(i) === 'B') {
-                count = (count + 1);
-            }
-        }
-        return count;
-    }
-
+    
 
     $("#Q4button").on("click", function() {
-
-        var userInput = prompt("");
-        var x = countBs(userInput);
-
-        $("#Q4result").html(x);
+		var B = ""; //this is a variabale
+		var sen = prompt ("Just type"); // text box
+		var countB = []; //this is an array that counts the B's
+		for (var i = 0; i <sen.length;  i++) { //i <sen.length; this is the limit of the search (whatever they type in the box)
+			if (sen [i]==="B") { //trying to find the B
+				countB.push("B"); // push the answer in the screen
+			}
+		}
+		
+		// this text "How many Bs" or if there are no B's text would say "No B's"
+		if (countB.length ===0){ // What happens when there are no B's :ALSO .length is number of characters. 
+			B = "No B's";
+			} 
+			
+		else { // What happens when there are B's
+			B = countB.length;
+			}	
+        $("#Q4result").html(B);
     });
 
 
-    function countBs(bString) {
-        var count = [];
-        for (var i = 0; i < bString.length; i++) {
-            if (bString.charAt(i) === 'B' || 'b') {
-                count = (count);
-            }
-        }
-        return count;
-    }
+ 
+       
+  
     $("#Q5button").on("click", function() {
 
-        var inputOne = prompt("");
-
-        var t = countBs(inputOne);
-        $("#Q5result").html(t);
+		var B = ""; //this is a variabale
+		var sen = prompt ("Just type"); // text box
+		var countChar = [];
+		//var countB = []; //this is an array that counts the B's
+		for (var i = 0; i <sen.length;  i++) { //i <sen.length; this is the limit of the search (whatever they type in the box)
+			if (sen [i]==="B") { //trying to find the B
+				countChar.push("B","b"); // push the answer in the screen
+			}
+		}
+		
+		// this text "How many Bs" or if there are no B's text would say "No B's"
+		if (countChar.length ===0){ // What happens when there are no B's :ALSO .length is number of characters. 
+			B = "No B's or b's";
+			} 
+			
+		else { // What happens when there are B's
+			B = countChar.length;
+			}	
+        
+        $("#Q5result").html(B);
     });
 
     function range(start, end) {

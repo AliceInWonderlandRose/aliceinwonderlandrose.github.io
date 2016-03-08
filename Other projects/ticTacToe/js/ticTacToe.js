@@ -92,15 +92,15 @@ $(document).ready(function() {
     var mulitArr = winningCombos[chosenSquare];
     var playerWon;
 
-    for (var i = 0; i < mulitArr.length; i++) { //Explain this nested for loop
+    for (var i = 0; i < mulitArr.length; i++) { // this function is the pop when a player wins
       playerWon = true;
       for (var j = 0; j < mulitArr[i].length; j++) {
-        if (!$("#board").find("div").eq(mulitArr[i][j]).find("span").hasClass(circleOrEx)) { //Explain this condition
+        if (!$("#board").find("div").eq(mulitArr[i][j]).find("span").hasClass(circleOrEx)) {// this does not allow the pop u when a player loses.  
           playerWon = false;
         }
       }
 
-      if (playerWon) { // This block of code deals with 
+      if (playerWon) { // deals with the winner or loser of the game. 
 
         for (var j = 0; j < mulitArr[i].length; j++) { // tragetting the varable. 
           $("#board").find("div").eq(mulitArr[i][j]).find("." + circleOrEx).addClass("green"); //To whichever person (the "x" or the "o") wins, the winner's line turns green
