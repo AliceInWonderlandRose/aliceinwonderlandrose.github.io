@@ -29,6 +29,11 @@ $(document).ready(function(){
 		$(this).text("Click Me!");
 	});
 	
+	$("#mySelect").change(function(){
+		var choice = $(this).val();
+		$("#mySelectMessage").html(choice +" whatever you want");
+		$("#log").append("<br> User change selection");
+	});
 	
 	
 	//User clicks this button
