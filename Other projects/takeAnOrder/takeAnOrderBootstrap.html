@@ -1,55 +1,257 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF­8">
-<title>Take an Order</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/takeAnOrder.js"></script>
-</head>
-<body>
-	
-<div id="wrapper">
-<input id="mySingleLineText" type="text" value="Type here">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Movie Library</title>
+        
+        <!-- our main stylesheet -->
+        <link rel="stylesheet" href="css/style.css" />
+        
+        <!-- jQuery library file -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <!-- our custom JavaScript file -->
+        <script src="js/takeAnOrder.js"></script>
+        
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <header id="site-header">
+            <h1>
+                Supernatural Book Library
+            </h1>
+        </header>
+        <section id="movie-list">
+            <h2>Movie List</h2>
+            
+            <article class="movie">
+                <header class="basic-info">
+                    <h3>The Darkest Powers Trilogy</h3>
+                 <img src="images/DP.jpeg" width="250" height="392" alt=""/>
+                </header>
+                <div class="extended-info">
+                    <p>After years of frequent moves following her mother’s death, Chloe Saunders’s life is finally settling down. She is attending art school, pursuing her dreams of becoming a director, making friends, meeting boys. Her biggest concern is that she’s not developing as fast as her friends are. But when puberty does hit, it brings more than hormone surges. Chloe starts seeing ghosts–everywhere, demanding her attention. After she suffers a breakdown, her devoted aunt Lauren gets her into a highly recommended group home. </p>
+
+<p>At first, Lyle House seems a pretty okay place, except for Chloe’s small problem of fearing she might be facing a lifetime of mental illness. But as she gradually gets to know the other kids at the home–charming Simon and his ominous, unsmiling brother Derek, obnoxious Tori, and Rae, who has a “thing” for fire–Chloe begins to realize that there is something that binds them all together, and it isn’t your usual “problem kid” behaviour. And together they discover that Lyle House is not your usual group home either…</p>
+                    <ul>
+                        <li class="release-date">
+                            <br>
+                            <time datetime="2015-11-06">November 2, 2010</time>
+                        </li>
+               </ul>
+               </div>
+            </article>
+            <!-- movie ends here -->
+            
+            <!-- movie starts here -->
+            <article class="movie">
+                <header class="basic-info">
+                    <h3>Harry Potter and the Philosopher's Stone</h3>
+                    <img src="images/HP.jpg" width="250" height="392" alt=""/>
+                </header>
+                <div class="extended-info">
+                    <p>Harry Potter thinks he is an ordinary boy celebrating his 11th birthday, but he is far from wrong. A giant named Hagrid appears, and gives Harry the all important news. He is a wizard. Now his journey in life gets more intense as he travels to Hogwarts school of witchcraft and wizardry to learn the trade of being a wizard. Here, he meets his friends who would be by his side for many years to come. Ron Weasley is not very brave friend and Hermione is the smart friend. But not everything is quiet at Hogwarts as Harry suspects someone is planning to steal the sorcerer's stone.</p>
+                    <ul>
+                        <li class="release-date">
+                            <br>
+                            <time datetime="2015-10-02">June 26, 1997</time>
+                        </li>
+                        <li class="rating">PG-13</li>
+                    </ul>
+                                    </div>
+            </article>
+            <!-- movie ends here -->
+            
+            <!-- movie starts here -->
+            <article class="movie">
+                <header class="basic-info">
+                    <h3>Hush Hush</h3>
+                    <img src="images/Hushhush.jpg" width="250" height="392" alt=""/>
+                </header>
+                <div class="extended-info">
+                    <p>The story starts off with Nora, a high school sophomore whose father was murdered months before the start of the series. In her biology class she meets Patch. A bad boy with a lot of secrets. With the help of her best friend Vee Sky, she discovers Patch is a fallen angel who fell from heaven due to lust.  Originally Patch is out to harm Nora, to sacrifice her because he believes if he does he will be able to feel. (Fallen Angles can not physically feel anything.) At the end of the first book Patch's descendent and Nephilim vassal, Jules aka Chauncey, tries to kill Nora as revenge against Patch. Nora sacrifices herself and Patch was given two options; become an archangel and let Nora live, or become human and have Nora die. His love for her was great enough to were he spared her life and became a fallen Angel. Also in this book it is revealed the Nora is a nephilim, a descendant of a fallen angel and human.</p>
+                    <ul>
+                        <li class="release-date">
+                           <br>
+                            <time datetime="2015-06-12">October 13, 2009</time>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </article>
+            <!-- movie ends here -->
+            
+            <!-- movie starts here -->
+            <article class="movie">
+                <header class="basic-info">
+                    <h3>Night Wrold</h3>
+                    <img src="images/NW.jpeg" width="250" height="392" alt=""/>
+                </header>
+                <div class="extended-info">
+                    <p>Vampires, werewolves, witches, shapeshifters -- they live among us without our knowledge. Night World is their secret society, a secret society with very strict rules. And falling in love breaks all the laws of the Night World.</p>
+                    <ul>
+                        <li class="release-date">
+                            <br>
+                            <time datetime="2015-05-15">June 3, 2008</time>
+                        </li>
+                    </ul>
+
+                </div>
+            </article>
+            <!-- movie ends here -->
+            
+            <!-- movie starts here -->
+            <article class="movie">
+                <header class="basic-info">
+                    <h3>Court of Thorns and Roses </h3>
+					<img src="images/roses.jpg" width="250" height="392" alt=""/>
+                </header>
+                <div class="extended-info">
+                    <p>When nineteen-year-old huntress Feyre kills a wolf in the woods, a beast-like creature arrives to demand retribution for it. Dragged to a treacherous magical land she only knows about from legends, Feyre discovers that her captor is not an animal, but Tamlin—one of the lethal, immortal faeries who once ruled their world.</p>
+
+<p>As she dwells on his estate, her feelings for Tamlin transform from icy hostility into a fiery passion that burns through every lie and warning she's been told about the beautiful, dangerous world of the Fae. But an ancient, wicked shadow grows over the faerie lands, and Feyre must find a way to stop it... or doom Tamlin—and his world—forever.</p>
+                    <ul>
+                        <li class="release-date">
+                            <br>
+                            <time datetime="2015-07-10">May 5, 2015</time>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <!-- movie ends here -->
+            
+            <!-- movie starts here -->
+            <article class="movie">
+                <header class="basic-info">
+                    <h3>Tuesday's Child</h3>
+                    <img src="images/Tuesdaychild.jpg" width="250" height="392" alt=""/>
+                </header>
+                <div class="extended-info">
+                    <p>Shunned and ridiculed all her life for something she can’t control, Samantha Blair hides her psychic abilities and lives on the fringes of society. Against her will, however, she’s tapped into a killer—or rather, his victims. Each woman’s murder, blow-by-blow, ravages her mind until their death releases her back to her body. Sam knows she must go to the authorities, but will the rugged, no-nonsense detective in charge of tracking down the killer believe her?</p>
+
+<p>Detective Brandt Sutherland only trusts hard evidence, yet Sam’s visions offer clues he needs to catch a killer. The more he learns about her incredible abilities, however, the clearer it becomes that Sam’s visions have put her in the killer’s line of fire. Now Brandt must save her from something he cannot see or understand…and risk losing his heart in the process.</p>
+                    <ul>
+                        <li class="release-date">
+                           <br>
+                            <time datetime="2015-05-01">June 16, 2011</time>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <!-- movie ends here -->
+            
+            <!-- movie starts here -->
+            <article class="movie">
+                <header class="basic-info">
+                    <h3>Deadly Besuties</h3>
+                    <img src="images/DeadlyBeauty.jpg" width="250" height="392" alt=""/>
+                </header>
+                <div class="extended-info">
+                    <p>Alyssa Coldwell is bound for a destiny as an immortal witch, but she desperately wants the chance to live a normal, human life for as long as she can. She takes a vacation from magic, but magic refuses to leave her in peace. The fey world draws her back in more so than ever before. </p>
+
+<p>In the midst of all the mayhem, she meets Kane Ice. He's human, meaning he's forbidden fruit, for the fey world has laws against immortals and mortals. Worried her world will either get him killed or leave him with scars he'll never overcome, she keeps pushing him away. Kane refuses to be deterred though. He loves the girl he believes is meant for him.</p>
+
+<p>Dark secrets emerge all around the two of them, putting them both in the line of fire and destroying the beauty of their love. The question is, how strong is their love?</p>
+                    <ul>
+                        <li class="release-date">
+                            <br>
+                            <time datetime="2015-10-16">February 20, 2014</time>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <!-- movie ends here -->
+            
+            <!-- movie starts here -->
+            <article class="movie">
+                <header class="basic-info">
+                    <h3>UnEnchanted</h3>
+                   <img src="images/unEnchanted.jpg" width="250" height="392" alt=""/> 
+                </header>
+                <div class="extended-info">
+                    <p>Mina Grime is unlucky, unpopular and uncoordinated; until she saves her crush's life on a field trip, changing her High School status from loser to hero overnight. But with her new found fame brings misfortune in the form of an old family curse come to light. For Mina is descended from the Brothers Grimm and has inherited all of their unfinished fairy tale business. Which includes trying to outwit a powerful Story from making her it's next fairytale victim. </p>
+
+<p>To break the fairy tale curse on her family and make these deadly occurrences stop, Mina must finish the tales until the very Grimm end.</p>
+                    <ul>
+                        <li class="release-date">
+                            <br>
+                            <time datetime="2015-11-13">December 29, 2011</time>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <!-- movie ends here -->
+            
+            <!-- movie starts here -->
+            <article class="movie">
+                <header class="basic-info">
+                    <h3>Twilight</h3>
+                    <img src="images/Twilight.png" width="250" height="392" alt=""/>
+                </header>
+                <div class="extended-info">
+                    <p>Bella Swan was not expecting anything out of the ordinary to happen when she moved to live with her Dad in Forks, Washington. But this where her life truly begins. There she meets Edward Cullen, a mysterious and captivating student at her new high school. Bella soon discovers that Edward is hiding a secret, after he impossibly saves her life from a van with his super-human strength and speed. She is determined to unravel his secret, but the truth is more terrifying than she realized. Edward is a vampire. Any normal person would just keep away from him, but Edward and Bella have fallen passionately and unconditionally in love with each other. And so begins their forbidden relationship between a human and a vampire. But the young lovers soon discover that their troubles are only just about to begin.</p>
+                    <ul>
+                        <li class="release-date">
+                            <br>
+                            <time datetime="2015-11-13">September 16, 2006</time>
+                        </li>
+					</ul>
+                </div>
+            </article>
+            <!-- movie ends here -->
+        </section>
+        <!-- an overlay to cover up the page -->
+        <!-- <div id="overlay"></div> -->
+    
+    
+    <div id="wrapper">
+<input id="search" type="text" value="Type here">
 <br>
 <br>
-<textarea id="myTextArea" rows="10" cols="50">Write something here</textarea>
+<textarea id="textBox" rows="10" cols="50">Write us a message so we can make our website better.</textarea>
 <br>
 <br>
-<select id="mySelect">
-  <option value="value1">Value 1</option> 
+<p>Choose the row and then check of what number the book is in the row.</p>
+<select id="myChoice">
+  <option value="value1">Row 1</option> 
   <br>
   <br>
-  <option value="value2" selected>Value 2</option>
+  <option value="value2" selected>Row 2</option>
   <br>
   <br>
-  <option value="value3">Value 3</option>
+  <option value="value3">Row 3</option>
   <br>
   <br>
 </select>
+<div id="myChoiceMessage"></div>
 <br>
 <br>
-<div id="mySelectMessage"></div>
- <input type="radio" name="gender" value="male" checked> Male
+<div id="myGender"></div>
+ <input type="radio" name="gender" value="male" checked> 1
  <br>
  <br>
-<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="female"> 2
 <br>
 <br>
-<input type="radio" name="gender" value="other"> Other
+<input type="radio" name="gender" value="other"> 3
 <br>
 <br>
-<input type="checkbox" name="vehicle" value="Bike" checked>I have a bike<br>
+<p>How would you like it to be deliverd? Please choose only one.</p>
+<input type="checkbox" name="vehicle" value="Car" checked>I have a Car<br>
 <br>
 <br>
-<input type="checkbox" name="vehicle" value="Car">I have a car
+<input type="checkbox" name="vehicle" value="Mail">It can be Mailed
 <br>
 <br> 
-<button id="myButton" type="button">Click Me!</button>
+<button id="orderButton" type="button">Click Me!</button>
 <br>
 <br>
 <div id="log">LOG</div>
 
 </div>
-
-</body>
+    
+   
+    
+    </body>
 </html>

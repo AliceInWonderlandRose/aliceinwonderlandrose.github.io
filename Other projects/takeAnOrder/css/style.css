@@ -1,0 +1,169 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.3888888;
+    font-weight: 300;
+	background-color: #D5D4D4;
+}
+
+#site-header{
+    background: #444444;
+    margin-bottom: 25px;
+}
+
+    #site-header h1{
+        color: #E91E63;
+        font-size: 60px;
+        line-height: 80px;
+        text-transform: uppercase;
+        font-weight: 600;
+        
+        width: 940px;
+        padding: 0 10px 0 10px;
+        margin: 0 auto;
+    }
+
+#movie-list{
+    width: 940px;
+    padding: 0 10px 0 10px;
+    margin: 0 auto;
+}
+
+#movie-list h2{
+    display: none;
+}
+
+    .movie{
+        max-width: 400px;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* disable the right margin on every third
+       movie. the '+1' adjusts for the fact that
+       there is an h2 inside the containing section */
+    .movie:nth-child(3n+1){
+        margin-right: 0;
+    }
+        /* header for each movie, contains
+           movie title and poster */
+        .basic-info{
+            width: inherit;
+            height: 450px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        /* movie titles */
+        .basic-info h3{
+            background: rgba(0,0,0,0.75);
+            position: absolute;
+            color: white;
+            width: 100%;
+            text-align: center;
+            font-size: 32px;
+            text-transform: uppercase;
+        }
+        
+        /* movie posters */
+        .basic-info img{
+            max-width: 100%;
+            display: block; /* get rid of extra space */
+            cursor: pointer; /* use the hand cursor */
+        }
+
+.extended-info{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: white;
+    z-index: 9999;
+    width: 600px;
+    padding: 20px;
+    
+    /* shift box over half its width to the left
+       and half its height up to center it */
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.open .extended-info{
+    display: block;
+}
+
+.extended-info h3{
+    color: #E91E63;
+    text-transform: uppercase;
+    font-size: 125%;
+    margin-bottom: 25px;
+}
+
+.extended-info a{
+    color: white;
+    background: #E91E63;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: block;
+    float: right;
+    padding: 6px 12px;
+    text-decoration: none;
+}
+
+#overlay{
+    position: fixed;
+    z-index: 5000;
+    background: rgba(0,0,0,0.6);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+/* 
+    takeAnOrderBootstrap
+*/
+
+/* Styling for ORDER NOW CONTENT*/
+
+#wrapper{
+	margin: 0 auto;
+	text-align:center;
+	
+	
+}
+
+
+
+#search{
+     boder:10px, 10px, 10px, 10px;
+	border-color:#EEE272;
+}
+
+#textBox {
+	
+}
+
+
+
+#orderButton{
+	background-color: #A29CFA;
+	border: none;
+	colour: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+
+.custom {
+	cursor: url(../images/pointer.gif), auto; 
+}
+
