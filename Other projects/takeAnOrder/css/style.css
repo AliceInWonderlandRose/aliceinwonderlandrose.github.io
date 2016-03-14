@@ -146,11 +146,6 @@ body{
 	border-color:#EEE272;
 }
 
-#textBox {
-	
-}
-
-
 
 #orderButton{
 	background-color: #A29CFA;
@@ -161,9 +156,5 @@ body{
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
-}
-
-.custom {
-	cursor: url(../images/pointer.gif), auto; 
 }
 
