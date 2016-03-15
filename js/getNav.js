@@ -4,7 +4,7 @@ $.get("http://AliceInWonderlandRose.github.io/partials/nav.html", function(data)
 	
 	$(".container").prepend(data);
 	$(".container").fadeIn();
-	
+	//Place code for the footer in here
 	});
 
 	
