@@ -8,9 +8,9 @@ var html = "<table>" +
 	
 	$.each(data, function(index, item){//item = each object
 		html+="<tr>"+
-		"<td>" + item.name+ "</td>" +
-		"<td>" + item.email+ "</td>" +
-		"<td>" + item.company+ "</td>" +
+		"<td>" + item.name + "</td>" +
+		"<td>" + item.email + "</td>" +
+		"<td>" + item.company + "</td>" +
 		"</tr>";
 		});
 	
