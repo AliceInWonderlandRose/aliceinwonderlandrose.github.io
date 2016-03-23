@@ -9,13 +9,13 @@ $.get("http://AliceInWonderlandRose.github.io/partials/nav.html", function(data)
 
 	});
 
-$.get("http://AliceInWonderlandRose.github.io/partials/footer.html", function(data){
+//$.get("http://AliceInWonderlandRose.github.io/partials/footer.html", function(data){
 	
-	$(document).ready(function(){
+	//$(document).ready(function(){
 	
-	$(".container").append(data);
-	$(".container").fadeIn();
+	//$(".container").append(data);
+	//$(".container").fadeIn();
 	//Place code for the footer in here
-	});
+	//});
 
-	});
+	//});
