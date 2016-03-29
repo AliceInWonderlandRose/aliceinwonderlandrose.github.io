@@ -1,10 +1,69 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Untitled Document</title>
-</head>
+[
+{
+	"type":"Calico",
+	"name": "Paws",
+	"gender":"Male",
+	"image":"images/cat4.jpg",
+	"comments" : [
+	{
+	"username": "AboveAlpha",
+	"stars": 5, 
+	"comment": "I'll defentily rent again"	
+		},{
+	"username": "DragonCool",
+	"stars": 4,
+	"comment": "Loved him, was really cute"
+			},{
+	"username": "Littlered123",
+	"stars": 3,
+	"comment": "It was alright. The shedding of his fur was annoying"
+				}
+				]
+	},
+	{
+		"type":"Tabby",
+		"name": "Mittens",
+		"gender":"Female",
+		"image":"images/cat5.jpg",
+		"comments" : [
+		{
+	"username":"BelleSparks",
+	"stars": 2,
+	"comment":"Did not really enjoy"
+	},
+	
+	{"username":"x.x.droplet.x.x",
+	"stars": 5,
+	"comment":"So much fun to play with"
+	},{
+	"username":"fictionisBetter",
+	"stars": 1,
+	"comment":"Destroyed my curtins and slippers"}
+					]
+		},
+		
+		{
+		"type":"Siamese"	,
+		"name":"Robert",
+		"gender":"Unspecified",
+		"image":"images/cat6.jpg",
+		"comments" : [
+	{
+	"username":"whiterose123",
+	"stars": 2,
+	"comment":"Pretty much slept the whole time"
+	},
+	{
+	"username":"bloodrose123",
+	"stars": 3,
+	"comment":"So cute"
+		},{
+	"username":"onlinedatinggamer",
+	"stars": 4,
+	"comment":"Loved this cat"
+			}
+					]
+			}]
+			
+			
 
-<body>
-</body>
-</html>

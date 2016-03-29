@@ -39,35 +39,3 @@ $(document).ready(function(){
 	$("#catData").append(html);
 	});
 });
-
-/*
-//one per cat
-<div class="col-md-4 cat">
-<div class="catName"</div>
-<div class="catType"</div>
-<div class="catGender"</div>
-<img src=""/>
-<div class="commentsContainer"</div>
-	//one per comment
-	<div class="renterName"</div>
-	<div class="renterLocation"</div>
-	<div class="renterStars"
-//5 stars some full some empty
-</div> //end stars
-</div> //end container
-</div> //end cat
-
-<div class="panel panel-default">
-
-  <div class="panel-heading">Panel heading</div>
-  <div class="panel-body">
-  
-  </div>
-
-  
-  
-</div>
-
-
-
-*/
