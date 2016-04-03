@@ -3,7 +3,7 @@
 	"name": "Grim Tales: The Legacy Collector's Edition HD",
 	"genre":"Horror, Adventure",
 	"type":"Game",
-	"image":"images/gameOne",
+	"image":"images/gameOne.jpg",
 	"comments" : [
 	{
 	"username": "OnlineGamer",
@@ -24,7 +24,7 @@
 	"name": "Dark Romance Heart od the Beast Collecotr's Edition",
 	"genre":"Romance, Adventure, Fairy Tale",
 	"type":"Game",
-	"image":"images/gameTwo",
+	"image":"images/gameTwo.jpg",
 		"comments" : [
 		{
 	"username":"BelleSparks",
@@ -46,7 +46,7 @@
 	"name": "Haunted Hotel 3: Lonely Dream HD",
 	"genre":"Adventure, Horror, Mystery",
 	"type":"Game",
-	"image":"images/gameThree.jpg",
+	"image":"images/gameThree.jpeg",
 	"comments" : [
 	{
 	"username":"whiterose123",
