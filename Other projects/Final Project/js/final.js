@@ -27,10 +27,10 @@ $(document).ready(function(){
 	var html="";
 	$.each(data, function(index, item){
 	html += '<div class="col-md-4 cat">' +
-	'<div class="catName">' +item.name +'</div>'+
-	'<div class="catType">' +item.type +'</div>' +
-	'<div class="catGender">' +item.gender +'</div>' +
-	'<img class="catImage" src="' +item.image + '"/>' +
+	'<div class="gameName">' +item.name +'</div>'+
+	'<div class="gameGenre">' +item.genre +'</div>' +
+	'<div class="gameType">' +item.type +'</div>' +
+	'<img class="gameImage" src="' +item.image + '"/>' +
 	'<div class="panel panel-default">' +
 	 '<div class="panel-heading">Information</div>';
 	
