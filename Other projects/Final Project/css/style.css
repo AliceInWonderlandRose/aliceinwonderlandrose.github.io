@@ -3,6 +3,14 @@
     background-color: #30E0C9;
 }
 
+.carousel-control left{
+	display:block;	
+}
+
+.carousel-control right{
+	display: block;	
+}
+
 .carousel{
     background: white;
     margin-top: 20px;
