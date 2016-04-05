@@ -18,10 +18,11 @@ $(document).ready(function(){
 				$.get("partials/home.html", function(data){
 					$("#pageContent").html(data);
 					$(".carousel").carousel();
-					 $('#gallery').blindify({ //Styling for My Carousel
-        color : '#FE7F6C',
-        numberOfBlinds : 40,
-        slideVisibleTime : 5000
+					 
+					 $('#myCarousel').blindify({ //Styling for My Carousel
+        			color : '#FE7F6C',
+        			numberOfBlinds : 40,
+       				 slideVisibleTime : 5000
     });
     
     // start and configure the Morphext plugin
