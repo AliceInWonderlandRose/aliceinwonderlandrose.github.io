@@ -133,10 +133,6 @@ $("#log").append("<br>User Clicked the Button");
 	// begin Program, get the homepage
 	getPartial("homePage");
 	
-//Styling for slider on home Page
-$('#gallery').blindify({
-        numberOfBlinds : 40,
-        slideVisibleTime : 5000
-    });
+
 
 }); //closes document ready. 
