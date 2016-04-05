@@ -134,6 +134,9 @@ $("#log").append("<br>User Clicked the Button");
 	getPartial("homePage");
 	
 //Styling for slider on home Page
-
+$('#myCarousel').blindify({
+        numberOfBlinds : 40,
+        slideVisibleTime : 5000
+    });
 
 }); //closes document ready. 
