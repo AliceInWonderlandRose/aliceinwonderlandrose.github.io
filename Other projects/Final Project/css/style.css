@@ -5,6 +5,17 @@
     background-color: #30E0C9;
 }
 
+body{
+	font-family: Lato, sans-serif;
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 1.25;
+	
+	background: #FE7F6C;
+	color: white;
+	border-top: solid 10px #dc5d4a;
+}
+
 .wrapper{
 	width: 978px;
 	margin: 0 auto;
@@ -27,11 +38,11 @@ header h1{
 	margin: 20px;
 }
 
-.catImage {
+.gameImage {
 	width:100%;
 }
 
-.catName{
+.gameName{
 	text-align: center;
 	font-weight: bold;
 	font-size: 24px;	
