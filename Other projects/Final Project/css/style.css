@@ -4,7 +4,7 @@
 }
 
 .carousel-control left{
-	display:block;	
+	background: red;	
 }
 
 .carousel-control right{
