@@ -17,7 +17,7 @@ $(document).ready(function(){
 		if (partial === "homePage"){
 				$.get("partials/home.html", function(data){
 					$("#pageContent").html(data);
-					$(".carousel").carousel();
+					$("#gallery").carousel();
 					
 		});
 		
@@ -134,7 +134,7 @@ $("#log").append("<br>User Clicked the Button");
 	getPartial("homePage");
 	
 //Styling for slider on home Page
-$('#myCarousel').blindify({
+$('#gallery').blindify({
         numberOfBlinds : 40,
         slideVisibleTime : 5000
     });
