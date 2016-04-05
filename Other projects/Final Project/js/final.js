@@ -42,9 +42,9 @@ $(document).ready(function(){
 				//var numStars = Number(i.stars);
 				for(var j=1;j<=5;j++){
 					if(j <= i.stars){
-					html+='<img src="images/fullstar.png"/>';
+					html+='<img src="images/fullStar.png"/>';
 					}else{
-					html+='<img src="images/emptystar.png"/>';
+					html+='<img src="images/emptyStar.png"/>';
 				}
 				}
 				
