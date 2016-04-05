@@ -18,17 +18,6 @@ $(document).ready(function(){
 				$.get("partials/home.html", function(data){
 					$("#pageContent").html(data);
 					$(".carousel").carousel();
-					 
-					 $('#myCarousel').blindify({ //Styling for My Carousel
-        			color : '#FE7F6C',
-        			numberOfBlinds : 40,
-       				 slideVisibleTime : 5000
-    });
-    
-    // start and configure the Morphext plugin
-    $('.rotate-text').Morphext({
-        animation : 'zoomInDown'
-    });
 					
 		});
 		
@@ -144,4 +133,7 @@ $("#log").append("<br>User Clicked the Button");
 	// begin Program, get the homepage
 	getPartial("homePage");
 	
+//Styling for slider on home Page
+
+
 }); //closes document ready. 
