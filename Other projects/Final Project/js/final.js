@@ -17,7 +17,7 @@ $(document).ready(function(){
 		if (partial === "homePage"){
 				$.get("partials/home.html", function(data){
 					$("#pageContent").html(data);
-					//$("#gallery").carousel();
+					$("#myCarousel").carousel();
 					
 		});
 		
