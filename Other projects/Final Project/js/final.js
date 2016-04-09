@@ -22,7 +22,7 @@ $(document).ready(function() {
                     $("#pageContent").html(data);
                     $('.carousel').carousel();
                 });
-            } else if (partial === "seeCatsPage") { //ajax models.html
+            } else if (partial === "rentPage") { //ajax models.html
                 //paste the getJSON here; change the append id; change the file name
                 $.getJSON("jsonDatabase/final.json", function(data) {
 
@@ -31,8 +31,8 @@ $(document).ready(function() {
                         $.each(data, function(index, item) {
                                 html += '<div class="col-xs-12 col-md-4 jsonCat">' +
                                     '<div class="gameName">' + item.name + '</div>' +
-                                    '<div class="gameGenre"><small>genre </small>' + item.genre + '</div>' +
-                                    '<div class="gameType"><small>type </small>' + item.type + '</div>' +
+                                    '<div class="gameGenre"><small>Genre </small>' + item.genre + '</div>' +
+                                    '<div class="gameType"><small>Type </small>' + item.type + '</div>' +
                                     '<img class="gameImage" src="' + item.image + '"/>' +
                                     //deleted commentsContainer
                                     '<div class="panel panel-default">' + //added
