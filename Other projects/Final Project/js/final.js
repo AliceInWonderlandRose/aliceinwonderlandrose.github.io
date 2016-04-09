@@ -24,16 +24,16 @@ $(document).ready(function() {
                 });
             } else if (partial === "seeCatsPage") { //ajax models.html
                 //paste the getJSON here; change the append id; change the file name
-                $.getJSON("jsonDatabase/finalCats.json", function(data) {
+                $.getJSON("jsonDatabase/final.json", function(data) {
 
                         var html = "";
 
                         $.each(data, function(index, item) {
                                 html += '<div class="col-xs-12 col-md-4 jsonCat">' +
-                                    '<div class="catName">' + item.name + '</div>' +
-                                    '<div class="catType"><small>type </small>' + item.type + '</div>' +
-                                    '<div class="catGender"><small>gender </small>' + item.gender + '</div>' +
-                                    '<img class="catImage" src="' + item.image + '"/>' +
+                                    '<div class="gameName">' + item.name + '</div>' +
+                                    '<div class="gameGenre"><small>genre </small>' + item.genre + '</div>' +
+                                    '<div class="gameType"><small>type </small>' + item.type + '</div>' +
+                                    '<img class="gameImage" src="' + item.image + '"/>' +
                                     //deleted commentsContainer
                                     '<div class="panel panel-default">' + //added
                                     '<div class="panel-heading">Renter Comments</div>'; //added
