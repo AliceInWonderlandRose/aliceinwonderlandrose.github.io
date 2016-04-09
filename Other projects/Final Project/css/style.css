@@ -3,7 +3,14 @@
     background-color: #30E0C9;
 }
 
+.carousel-control {
+    background-color: none;
+    color: black;
+}
 
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
 
 .carousel{
     background: white;
