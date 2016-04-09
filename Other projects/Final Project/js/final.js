@@ -28,15 +28,15 @@ $(document).ready(function(){
 	$.each(data, function(index, item){
 	html += '<div class="col-md-4 cat">' +
 	'<div class="gameName">' +item.name +'</div>'+
-	'<div class="gameGenre">' +item.genre +'</div>' +
-	'<div class="gameType">' +item.type +'</div>' +
+	'<div class="gameGenre"> <small>Genre </small>' +item.genre +'</div>' +
+	'<div class="gameType"> <small>Type </small>' +item.type +'</div>' +
 	'<img class="gameImage" src="' +item.image + '"/>' +
 	'<div class="panel panel-default">' +
 	 '<div class="panel-heading">Information</div>';
 	
 	$.each(item.comments, function(ind, i){
 		html+= '<div class="panel-body">' +
-				'<div class="renterName">'+i.username + '</div>' +
+				'<div class="renterName"> <small>'+i.username + '</small></div>' +
 				'<div class="renterLocation">'+i.comment + '</div>' +
 				'<div class="renterStars">';
 				//var numStars = Number(i.stars);
@@ -59,15 +59,49 @@ $(document).ready(function(){
 	}); //each cat
 	
 	$("#pageContent").html(html);
-	});
+	$('#startRentDate, #endRentDate').datepicker({});
+	$("#submitButton").on("click", function() {
+	//get all empty inputs and select
+     //add error class to div container
+               $("input, select").filter(function() {
+                return !this.value;
+               }).closest("div").addClass("has-error");
 
-	// ORDER PAGE STARTS
+                //remove error class for non empty ones
+                $("input, select").filter(function() {
+                 return this.value; //removed !
+                 }).closest("div").removeClass("has-error");
+
+                 var errors = $(".has-error");
+
+                 if (errors.length < 1) {
+                 //alert("no errors");
+                 sendConfirmation();
+								}
+	
+	}); //click
+
+	
+
+		}); //get
+			
+			}
+	}
+	// begin Program, get the homepage
+	getPartial("homePage");
+	
+
+
+}); //closes document ready. 
+
+/*// ORDER PAGE STARTS
 		}else if (partial === "orderPage"){
 			
 			$.get("partials/order.html", function(data){
 			$("#pageContent").html(data);
 			
 		//TAKE AN ORDER JS STYLING RIGHT HERE!!!!!
+		
 		$("#search").on("focus", function(){
 		$("#log").append("<br>Search background-color");
 		$(this).css("background-color", "blue");
@@ -124,15 +158,4 @@ $("#log").append("<br>User Clicked the Button");
 		$("#log").append("<br>Value of check values is: "+myCheckValues.join());
 		
 		
-	}); 
-
-		}); 
-			
-			}
-	}
-	// begin Program, get the homepage
-	getPartial("homePage");
-	
-
-
-}); //closes document ready. 
+	}); */
