@@ -71,13 +71,13 @@ $(document).ready(function() {
 	// jQurey events in here
 					// First jQurey Event
 						$("#startRentDate").on("focus", function(){
-						$(this).css("background-color", "blue");
 						$("#log").append("<br>Search background-color");
+						$(this).css("background-color", "blue");
 						})
-						
+	
 						.on("blur", function(){
 						$("#log").append("<br>when box not selected, turn white");
-						$(this).css("background-color", "yellow");
+						$(this).css("background-color", "#FFF");
 						});
 						
 						/*$("#submitButton").mouseenter(function(){
