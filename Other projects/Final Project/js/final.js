@@ -111,9 +111,9 @@ $(document).ready(function() {
                                     sendConfirmation();
                                 }
 									var mySearch = $("#search").val();
-						var myTextbox = $("#textBox").val();
+						var mystartdate = $("#startRentDate").val();
 						var mySelect = $("#myChoice").val();
-						var myGender = $("[name='gender']:checked").val();
+						var myGenre = $("[name='genre']:checked").val();
 		    
 							/*var myCheckValues = [];
 							//each is a jquery loop for objects/arrays
@@ -126,9 +126,9 @@ $(document).ready(function() {
 					$("#log").append("<br>User Clicked the Button");
 			
 					$("#log").append("<br>Value of input is: "+mySearch);
-					$("#log").append("<br>Value of textarea is: "+myTextbox);
+					$("#log").append("<br>Value of textarea is: "+mystartdate);
 					$("#log").append("<br>Value of select is: "+mySelect);
-					//$("#log").append("<br>Value of check values is: "+myCheckValues.join());
+					$("#log").append("<br>Value of check values is: "+myGenre.join());
 		
 		
 					} 
