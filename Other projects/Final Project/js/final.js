@@ -132,7 +132,7 @@ $(document).ready(function() {
 					//$("#log").append("<br>Value of check values is: "+myCheckValues.join());
 		
 		
-					}); 
+					} 
                             }); //click
                     }); //get
             }
