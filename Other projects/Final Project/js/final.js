@@ -126,7 +126,7 @@ $(document).ready(function() {
 					$("#log").append("<br>User Clicked the Button");
 			
 					//$("#log").append("<br>Value of input is: "+mySearch);
-					$("#log").append("<br>Value of textarea is: "+mystartdate);
+					$("#log").append("<br>Please place the date you want to rent the game for: "+mystartdate);
 					//$("#log").append("<br>Value of select is: "+mySelect);
 					$("#log").append("<br>Value of check values is: "+myGenre.join());
 		
