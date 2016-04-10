@@ -73,9 +73,10 @@ $(document).ready(function() {
 						$("#startRentDate").on("focus", function(){
 						$(this).css("background-color", "blue");
 						$("#log").append("<br>Search background-color");
-						})
+						});
 						
-						.on("blur", function(){
+						$("#startRentDate").on("blur", function(){
+						//.on("blur", function(){
 						$("#log").append("<br>when box not selected, turn white");
 						$(this).css("background-color", "#FFF");
 						});
