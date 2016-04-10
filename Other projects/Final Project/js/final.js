@@ -77,7 +77,7 @@ $(document).ready(function() {
 						
 						.on("blur", function(){
 						$("#log").append("<br>when box not selected, turn white");
-						$(this).css("background-color", "#FFF");
+						$(this).css("background-color", "yellow");
 						});
 						
 						/*$("#submitButton").mouseenter(function(){
