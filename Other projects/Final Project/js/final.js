@@ -89,6 +89,7 @@ $(document).ready(function() {
 						$(this).text("Click Me!");
 						}); 
 						
+						
                         $("#submitButton").on("click", function() {
 
                                 //get all empty inputs and select
