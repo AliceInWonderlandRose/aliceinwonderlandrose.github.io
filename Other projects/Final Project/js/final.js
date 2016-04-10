@@ -89,8 +89,7 @@ $(document).ready(function() {
 						$(this).text("Click Me!");
 						}); 
 						
-		
-						
+	
 						
                         $("#submitButton").on("click", function() {
 
@@ -111,12 +110,7 @@ $(document).ready(function() {
                                     //alert("no errors");
                                     sendConfirmation();
                                 }
-
-                            }); //click
-                    }); //get
-            }
-            $("#pageContent").fadeIn();
-			var mySearch = $("#search").val();
+									var mySearch = $("#search").val();
 						var myTextbox = $("#textBox").val();
 						var mySelect = $("#myChoice").val();
 						var myGender = $("[name='gender']:checked").val();
@@ -139,8 +133,13 @@ $(document).ready(function() {
 		
 		
 					}); 
-        }
+                            }); //click
+                    }); //get
+            }
+            $("#pageContent").fadeIn();
 
+        }
+		
         function sendConfirmation() {
             //make an object to record data for database;
             var order = {};
