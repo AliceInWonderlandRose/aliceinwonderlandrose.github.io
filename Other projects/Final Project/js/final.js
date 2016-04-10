@@ -67,7 +67,7 @@ $(document).ready(function() {
 
                         $("#pageContent").html(data);
 
-                        $('#startRentDate, #endRentDate').datepicker({});
+                       // $('#startRentDate, #endRentDate').datepicker({});
 	// jQurey events in here
 					// First jQurey Event
 						$("#startRentDate").on("focus", function(){
