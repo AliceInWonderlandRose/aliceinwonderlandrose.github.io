@@ -128,12 +128,11 @@ $(document).ready(function() {
 					$("#log").append("<br>Value of input is: "+mySearch);
 					$("#log").append("<br>Value of textarea is: "+myTextbox);
 					$("#log").append("<br>Value of select is: "+mySelect);
-					$("#log").append("<br>Value of radio button is: "+myGender);
 					//$("#log").append("<br>Value of check values is: "+myCheckValues.join());
 		
 		
 					} 
-                            }); //click
+                            ); //click
                     }); //get
             }
             $("#pageContent").fadeIn();
