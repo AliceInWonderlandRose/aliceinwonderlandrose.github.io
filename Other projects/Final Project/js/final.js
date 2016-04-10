@@ -110,22 +110,22 @@ $(document).ready(function() {
                                     //alert("no errors");
                                     sendConfirmation();
                                 }
-						//var mySearch = $("#search").val();
+						var mySearch = $("#search").val();
 						var mystartdate = $("#startRentDate").val();
 						//var mySelect = $("#myChoice").val();
 						var myGenre = $("[name='genre']:checked").val();
 		    
-							/*var myCheckValues = [];
+							var myCheckValues = [];
 							//each is a jquery loop for objects/arrays
 							// each thing is selcted, do function
 							// "this" is the element we are currently looking at.
     						$("[name='vehicle']:checked").each(function() {
        						 myCheckValues.push($(this).val());
-    						}); */
+    						}); 
 	
 					$("#log").append("<br>User Clicked the Button");
 			
-					//$("#log").append("<br>Value of input is: "+mySearch);
+					$("#log").append("<br>Value of input is: "+mySearch);
 					$("#log").append("<br>Please place the date you want to rent the game for: "+mystartdate);
 					//$("#log").append("<br>Value of select is: "+mySelect);
 					$("#log").append("<br>Value of check values is: "+myGenre.join());
