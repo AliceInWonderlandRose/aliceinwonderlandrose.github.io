@@ -80,14 +80,14 @@ $(document).ready(function() {
 						$(this).css("background-color", "#FFF");
 						});
 						
-						/*$("#submitButton").mouseenter(function(){
+						$("#submitButton").mouseenter(function(){
 						$(this).text("ORDER NOW!!");
 						$("#log").append("<br> Button mouseenter");
 							})
 						.on("mouseleave",function(){
 						$("#log").append("<br>Button mouseleave");
 						$(this).text("Click Me!");
-						}); */
+						}); 
 						
                         $("#submitButton").on("click", function() {
 
