@@ -110,9 +110,9 @@ $(document).ready(function() {
                                     //alert("no errors");
                                     sendConfirmation();
                                 }
-									var mySearch = $("#search").val();
+						//var mySearch = $("#search").val();
 						var mystartdate = $("#startRentDate").val();
-						var mySelect = $("#myChoice").val();
+						//var mySelect = $("#myChoice").val();
 						var myGenre = $("[name='genre']:checked").val();
 		    
 							/*var myCheckValues = [];
@@ -125,9 +125,9 @@ $(document).ready(function() {
 	
 					$("#log").append("<br>User Clicked the Button");
 			
-					$("#log").append("<br>Value of input is: "+mySearch);
+					//$("#log").append("<br>Value of input is: "+mySearch);
 					$("#log").append("<br>Value of textarea is: "+mystartdate);
-					$("#log").append("<br>Value of select is: "+mySelect);
+					//$("#log").append("<br>Value of select is: "+mySelect);
 					$("#log").append("<br>Value of check values is: "+myGenre.join());
 		
 		
