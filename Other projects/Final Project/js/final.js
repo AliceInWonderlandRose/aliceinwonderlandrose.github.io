@@ -71,8 +71,9 @@ $(document).ready(function() {
 						// jQurey events in here
 						
 						$("#startRentDate").on("focus", function(){
-						$("#log").append("<br>Search background-color");
 						$(this).css("background-color", "blue");
+						$("#log").append("<br>Search background-color");
+						
 	});
 						
                         $("#submitButton").on("click", function() {
