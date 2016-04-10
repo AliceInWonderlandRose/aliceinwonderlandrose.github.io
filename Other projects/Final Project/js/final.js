@@ -72,7 +72,7 @@ $(document).ready(function() {
 						$("#control-label").on("focus", function(){
 						$("#log").append("<br>Search background-color");
 						$(this).css("background-color", "blue");
-	})
+	});
 						
                         $("#submitButton").on("click", function() {
 
