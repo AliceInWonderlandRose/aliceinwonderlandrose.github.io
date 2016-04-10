@@ -89,31 +89,8 @@ $(document).ready(function() {
 						$(this).text("Click Me!");
 						}); 
 						
-						$("#orderButton").click(function(){
 		
-						var mySearch = $("#search").val();
-						var myTextbox = $("#textBox").val();
-						var mySelect = $("#myChoice").val();
-						var myGender = $("[name='gender']:checked").val();
-		    
-							/*var myCheckValues = [];
-							//each is a jquery loop for objects/arrays
-							// each thing is selcted, do function
-							// "this" is the element we are currently looking at.
-    						$("[name='vehicle']:checked").each(function() {
-       						 myCheckValues.push($(this).val());
-    						}); */
-	
-					$("#log").append("<br>User Clicked the Button");
-			
-					$("#log").append("<br>Value of input is: "+mySearch);
-					$("#log").append("<br>Value of textarea is: "+myTextbox);
-					$("#log").append("<br>Value of select is: "+mySelect);
-					$("#log").append("<br>Value of radio button is: "+myGender);
-					$("#log").append("<br>Value of check values is: "+myCheckValues.join());
-		
-		
-					}); 
+						
 						
                         $("#submitButton").on("click", function() {
 
@@ -139,7 +116,29 @@ $(document).ready(function() {
                     }); //get
             }
             $("#pageContent").fadeIn();
-
+			var mySearch = $("#search").val();
+						var myTextbox = $("#textBox").val();
+						var mySelect = $("#myChoice").val();
+						var myGender = $("[name='gender']:checked").val();
+		    
+							/*var myCheckValues = [];
+							//each is a jquery loop for objects/arrays
+							// each thing is selcted, do function
+							// "this" is the element we are currently looking at.
+    						$("[name='vehicle']:checked").each(function() {
+       						 myCheckValues.push($(this).val());
+    						}); */
+	
+					$("#log").append("<br>User Clicked the Button");
+			
+					$("#log").append("<br>Value of input is: "+mySearch);
+					$("#log").append("<br>Value of textarea is: "+myTextbox);
+					$("#log").append("<br>Value of select is: "+mySelect);
+					$("#log").append("<br>Value of radio button is: "+myGender);
+					//$("#log").append("<br>Value of check values is: "+myCheckValues.join());
+		
+		
+					}); 
         }
 
         function sendConfirmation() {
