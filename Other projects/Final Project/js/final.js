@@ -73,22 +73,21 @@ $(document).ready(function() {
 						$("#startRentDate").on("focus", function(){
 						$(this).css("background-color", "blue");
 						$("#log").append("<br>Search background-color");
-						});
+						})
 						
-						$("#startRentDate").on("blur", function(){
-						//.on("blur", function(){
+						.on("blur", function(){
 						$("#log").append("<br>when box not selected, turn white");
 						$(this).css("background-color", "#FFF");
 						});
 						
-						$("#submitButton").mouseenter(function(){
+						/*$("#submitButton").mouseenter(function(){
 						$(this).text("ORDER NOW!!");
 						$("#log").append("<br> Button mouseenter");
 							})
 						.on("mouseleave",function(){
 						$("#log").append("<br>Button mouseleave");
 						$(this).text("Click Me!");
-						});
+						}); */
 						
                         $("#submitButton").on("click", function() {
 
