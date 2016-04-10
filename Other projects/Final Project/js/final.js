@@ -68,7 +68,12 @@ $(document).ready(function() {
                         $("#pageContent").html(data);
 
                         $('#startRentDate, #endRentDate').datepicker({});
-
+						// jQurey events in here
+						$("#control-label").on("focus", function(){
+						$("#log").append("<br>Search background-color");
+						$(this).css("background-color", "blue");
+	})
+						
                         $("#submitButton").on("click", function() {
 
                                 //get all empty inputs and select
@@ -157,139 +162,8 @@ $(document).ready(function() {
 
 
 
-/*$(document).ready(function(){
-	
-	// Get all the nav li, add click event
-	$(".nav").find("li").on("click",function(){
-		// remove all active class
-		//$(".nav").find("li").removeClass("active");
-		// add active class to clicked it. 
-		 $("#pageContent").hide().html("");
-		 $(".nav").find("li").removeClass("active");
-		$(this).addClass("active");
-		var page = $(this).attr("id");
-		//console.log("page" +page);
-		getPartial(page);
-	
-	});// closes the $(".nav").find("li").on("click",function()
-	
-	function getPartial(partial) {
-		
-		if (partial === "homePage"){
-				$.get("partials/home.html", function(data){
-					$("#pageContent").html(data);
-					$("#myCarousel").carousel();
-					
-		});
-		
-		}else if (partial === "rentPage"){
-					$.getJSON("jsonDatabase/final.json",function(data){
-		console.dir(data);
-	var html="";
-	$.each(data, function(index, item){
-	html += '<div class="col-md-4 cat">' +
-	'<div class="gameName">' +item.name +'</div>'+
-	'<div class="gameGenre"> <small>Genre </small>' +item.genre +'</div>' +
-	'<div class="gameType"> <small>Type</small>' +item.type +'</div>' +
-	'<img class="gameImage" src="' +item.image + '"/>' +
-	'<div class="panel panel-default">' +
-	 '<div class="panel-heading">Information</div>';
-	
-	$.each(item.comments, function(ind, i){
-		html+= '<div class="panel-body">' +
-				'<div class="renterName"><small>'+i.username + '</small></div>' +
-				'<div class="renterLocation">'+i.comment + '</div>' +
-				'<div class="renterStars">';
-				//var numStars = Number(i.stars);
-				for(var j=1;j<=5;j++){
-					if(j <= i.stars){
-					html+='<img src="images/fullStar.png"/>';
-					}else{
-					html+='<img src="images/emptyStar.png"/>';
-				}
-				}
-				
-				html+= '</div></div>';//end stars
-				
-	});//Each comment
-	
-	
-	// do some stuff
-	html += '</div>'+ //comment container
-	 '</div>';	//col-md-4
-	}); //each cat
-	
-	$("#pageContent").html(html);
-	$('#startRentDate, #endRentDate').datepicker({});
-	$("#submitButton").on("click", function() {
-	//get all empty inputs and select
-     //add error class to div container
-               $("input, select").filter(function() {
-                return !this.value;
-               }).closest("div").addClass("has-error");
+/*
 
-                //remove error class for non empty ones
-                $("input, select").filter(function() {
-                 return this.value; //removed !
-                 }).closest("div").removeClass("has-error");
-
-                 var errors = $(".has-error");
-
-                 if (errors.length < 1) {
-                 //alert("no errors");
-                 sendConfirmation();
-								}
-	
-	}); //click
-
-	
-
-		}); //get
-			
-			}
-	 $("#pageContent").fadeIn();
-	}
-	function sendConfirmation() {
-            //make an object to record data for database;
-            var order = {};
-            //get all teh jquery objects
-            var formData = $("input, select");
-            //for each jquery object
-            formData.each(function() {
-                var id = $(this).attr("id");//get the id of the element
-                order[id] = $(this).val();//set the field and the value
-            });
-
-            alert("Sending to database " + JSON.stringify(order));
-            $("#successMsg").html("Order Received!<br/><br/>" +
-              order.catSelect + " will be delivered on " + 
-              order.startRentDate +
-              "<img id='paws' src='images/catPaws.jpeg'>");
-
-        } //sendConfirmation
-	
-	
-	// begin Program, get the homepage
-	getPartial("homePage");
-	
-
-
-}); //closes document ready. 
-
-
-
-
-
-
-
-
-
-// ORDER PAGE STARTS
-		}else if (partial === "orderPage"){
-			
-			$.get("partials/order.html", function(data){
-			$("#pageContent").html(data);
-			
 		//TAKE AN ORDER JS STYLING RIGHT HERE!!!!!
 		
 		$("#search").on("focus", function(){
