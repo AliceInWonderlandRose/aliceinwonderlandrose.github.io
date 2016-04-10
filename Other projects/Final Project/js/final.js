@@ -69,7 +69,8 @@ $(document).ready(function() {
 
                         $('#startRentDate, #endRentDate').datepicker({});
 						// jQurey events in here
-						$("#control-label").on("focus", function(){
+						
+						$("#startRentDate").on("focus", function(){
 						$("#log").append("<br>Search background-color");
 						$(this).css("background-color", "blue");
 	});
