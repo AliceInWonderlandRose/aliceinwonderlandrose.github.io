@@ -120,6 +120,10 @@ $(document).ready(function() {
 						var myTimeUpMonth = $("#expirymonth").val();
 						var myTimeUpYear =$("#expiryYear").val();
 						var myAdress =$("#address1").val();
+						var myZip =$("#zip").val();
+						var myState =$("#state").val();
+						var myCountry =$("#country").val();
+						var mySuccess =$("#successMsg").val();
 		    
 							var myCheckValues = [];
 							//each is a jquery loop for objects/arrays
@@ -131,15 +135,20 @@ $(document).ready(function() {
 	
 					$("#log").append("<br>User Clicked the Button");
 			
-					$("#log").append("<br>Information is being processed: "+mybutton);
-					$("#log").append("<br>Please place the date you want to rent the game for: "+mystartdate);
+					
+					$("#log").append("<br>Day of rent: "+mystartdate);
 					//$("#log").append("<br>Value of select is: "+mySelect);
 					$("#log").append("<br>User card name: "+myName);
 					$("#log").append("<br>User card number: "+myCardNumber);
 					$("#log").append("<br>User card security number: "+mysecurity);
 					$("#log").append("<br>User expiry month: "+myTimeUpMonth);
-					$("#log").append("<br> User expiry year: "+myTimeUpYear);
-					$("#log").appened("<br> User adress: "+myAdress);
+					$("#log").append("<br>User expiry year: "+myTimeUpYear);
+					$("#log").appened("<br>User adress: "+myAdress);
+					$("#log").appened("<br>User Zip is: "+myZip);
+					$("#log").appened("<br>User state is: "+myState);
+					$("#log").appened("<br>User Counrty is: "+myCountry);
+					$("#log").append("<br>Information is being processed: "+mybutton);
+					$("#log").append("<br> Successful message recieved: "+mySuccess);
 					$("#log").append("<br>Value of check values is: "+myGenre.join());
 		
 		
