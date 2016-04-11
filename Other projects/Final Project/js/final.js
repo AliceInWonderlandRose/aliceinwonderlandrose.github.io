@@ -117,6 +117,9 @@ $(document).ready(function() {
 						var myName = $("#name").val();
 						var myCardNumber = $("#cardNumber").val();
 						var mysecurity = $("#securityCode").val();
+						var myTimeUpMonth = $("#expirymonth").val();
+						var myTimeUpYear =$("#expiryYear").val();
+						var myAdress =$("#address1").val();
 		    
 							var myCheckValues = [];
 							//each is a jquery loop for objects/arrays
@@ -128,12 +131,15 @@ $(document).ready(function() {
 	
 					$("#log").append("<br>User Clicked the Button");
 			
-					$("#log").append("<br>Value of input is: "+mybutton);
+					$("#log").append("<br>Information is being processed: "+mybutton);
 					$("#log").append("<br>Please place the date you want to rent the game for: "+mystartdate);
 					//$("#log").append("<br>Value of select is: "+mySelect);
 					$("#log").append("<br>User card name: "+myName);
 					$("#log").append("<br>User card number: "+myCardNumber);
 					$("#log").append("<br>User card security number: "+mysecurity);
+					$("#log").append("<br>User expiry month: "+myTimeUpMonth);
+					$("#log").append("<br> User expiry year: "+myTimeUpYear);
+					$("#log").appened("<br> User adress: "+myAdress);
 					$("#log").append("<br>Value of check values is: "+myGenre.join());
 		
 		
