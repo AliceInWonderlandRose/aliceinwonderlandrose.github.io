@@ -114,6 +114,9 @@ $(document).ready(function() {
 						var mystartdate = $("#startRentDate").val();
 						var mybutton = $("#submitButton").val();
 						var myGenre = $("[name='genre']:checked").val();
+						var myName = $("#name").val();
+						var myCardNumber = $("#cardNumber").val();
+						var mysecurity = $("#securityCode").val();
 		    
 							var myCheckValues = [];
 							//each is a jquery loop for objects/arrays
@@ -128,6 +131,9 @@ $(document).ready(function() {
 					$("#log").append("<br>Value of input is: "+mybutton);
 					$("#log").append("<br>Please place the date you want to rent the game for: "+mystartdate);
 					//$("#log").append("<br>Value of select is: "+mySelect);
+					$("#log").append("<br>User card name: "+myName);
+					$("#log").append("<br>User card number: "+myCardNumber);
+					$("#log").append("<br>User card security number: "+mysecurity);
 					$("#log").append("<br>Value of check values is: "+myGenre.join());
 		
 		
